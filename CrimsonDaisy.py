@@ -2,14 +2,14 @@ import discord
 from discord.ext import commands
 import requests
 
-client = commands.Bot(command_prefix='#', help_command=None, case_insensitive = True)
+client = commands.Bot(command_prefix='&', help_command=None, case_insensitive = True)
 
 @client.event
 async def on_ready():
     print('Bot is ready.')
     general_channel = client.get_channel(818338932319846414)
     await general_channel.send('Hello Shaan.')
-    await client.change_presence(status = discord.Status.online, activity = discord.Game('#help Super Smash Bros. Ultimate'))
+    await client.change_presence(status = discord.Status.online, activity = discord.Game('&help Super Smash Bros. Ultimate'))
 
 @client.command(name = 'help')
 async def help(context):
@@ -17,8 +17,8 @@ async def help(context):
     CrimsonDaisy = discord.Embed(title = "Help", type = "rich", description = "I am Crimson mf Daisy", color = 0xfca103)
     CrimsonDaisy.set_thumbnail(url="attachment://image.png")
     CrimsonDaisy.set_author(name = "Crimson Daisy", icon_url = "https://ssb.wiki.gallery/images/2/2d/DaisyHeadSSBUWebsite.png")
-    CrimsonDaisy.add_field(name = "#smash <OPTIONAL @USER>", value = "Smash that mf", inline=False)
-    CrimsonDaisy.add_field(name = "#<Smash Character (Daisy)>", value = "Smash Data (Absolute Scale and Ranks)", inline=False)
+    CrimsonDaisy.add_field(name = "&smash <OPTIONAL @USER>", value = "Smash that mf", inline=False)
+    CrimsonDaisy.add_field(name = "&<Smash Character (Daisy)>", value = "Smash Data (Absolute Scale and Ranks)", inline=False)
     CrimsonDaisy.set_footer(text = "Degen Daisy Main")
     await context.message.channel.send(file = file, embed = CrimsonDaisy)
 
@@ -29,7 +29,7 @@ async def on_message(message):
     if "hello" in message.content:
         await message.channel.send("Hello! " + message.author.mention)
 
-    if "smash" in message.content and "#" not in message.content:
+    if "smash" in message.content and "&" not in message.content:
         await message.channel.send("I'll smash your dad")
 
     await client.process_commands(message)
@@ -72,6 +72,7 @@ async def DK(context):
     DK.set_footer(text = "[X] = Rank out of 87.\n[X-Y] = More than 1 character has this rank.")
     await context.message.channel.send(file = file, embed = DK)
 
+
 @client.command(name = 'Peach')         #Peach Command: #14
 async def Peach(context):
     file = discord.File("Images/PeachImage.png", filename = "image.png")
@@ -85,7 +86,6 @@ async def Peach(context):
     Peach.add_field(name = "Weightclass", value = "`Lightweight`", inline=True)
     Peach.set_footer(text = "[X] = Rank out of 87.\n[X-Y] = More than 1 character has this rank.")
     await context.message.channel.send(file = file, embed = Peach)
-
 
 
 @client.command(name = 'Daisy')         #Daisy Command: #15
