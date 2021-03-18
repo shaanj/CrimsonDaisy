@@ -189,6 +189,20 @@ async def Luigi(context):
     await context.message.channel.send(file = file, embed = Luigi)
 
 
+@client.command(name = "Ness")             #Ness Command: #11
+async def Ness(context):
+    file = discord.File("Images/NessImage.png", filename = "image.png")
+    Ness = discord.Embed(title = "EarthBound (1994)", type = "rich", description = "Strong Back Throw & Bad Recovery", color = 0xff0000)
+    Ness.set_thumbnail(url="attachment://image.png")
+    Ness.set_author(name = "#11: Ness", url = "https://open.spotify.com/track/3JlK5EtPgo2cykk5BtIJUo?si=9c782a41638a4749", icon_url = "https://ssb.wiki.gallery/images/d/d5/NessHeadSSBUWebsite.png")
+    Ness.add_field(name = "Run Speed", value = "1.609 `[57]`", inline=True)
+    Ness.add_field(name = "Air Speed", value = "1.007 `[57]`", inline=True)
+    Ness.add_field(name = "Fall Speed", value = "1.31 `[77]`", inline=False)
+    Ness.add_field(name = "Weight", value = "94 `[47-50]`", inline=True)
+    Ness.add_field(name = "Weightclass", value = "`Middleweight`", inline=True)
+    await context.message.channel.send(file = file, embed = Ness)
+
+
 @client.command(name = 'Peach')            #Peach Command: #14
 async def Peach(context):
     file = discord.File("Images/PeachImage.png", filename = "image.png")
