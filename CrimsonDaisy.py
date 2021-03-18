@@ -19,7 +19,7 @@ async def help(context):
     CrimsonDaisy.set_author(name = "Crimson Daisy", icon_url = "https://ssb.wiki.gallery/images/2/2d/DaisyHeadSSBUWebsite.png")
     CrimsonDaisy.add_field(name = "&smash <OPTIONAL @USER>", value = "Smash that mf", inline=False)
     CrimsonDaisy.add_field(name = "&<Smash Character (Daisy)>", value = "Smash Data (Absolute Scale and Ranks)", inline=False)
-    CrimsonDaisy.set_footer(text = "Degen Daisy Main")
+    CrimsonDaisy.set_footer(text = "For 2nd command, [X] = Rank out of 87.\n[X-Y] = More than 1 character has this rank.")
     await context.message.channel.send(file = file, embed = CrimsonDaisy)
 
 @client.event
@@ -42,7 +42,7 @@ async def smash(context, user : discord.User = None):
         await context.send("I'm gonna smash " + user.mention)
 
 
-
+                                        
 @client.command(name = 'Mario')         #Mario Command: #1
 async def Mario(context):
     file = discord.File("Images/MarioImage.png", filename = "image.png")
@@ -54,7 +54,7 @@ async def Mario(context):
     Mario.add_field(name = "Fall Speed", value = "1.5 `[57-60]`", inline=False)
     Mario.add_field(name = "Weight", value = "98 `[32-35]`", inline=True)
     Mario.add_field(name = "Weightclass", value = "`Middleweight`", inline=True)
-    Mario.set_footer(text = "[X] = Rank out of 87.\n[X-Y] = More than 1 character has this rank.")
+    Mario.set_footer(text = "Can: Wall Jump")
     await context.message.channel.send(file = file, embed = Mario)
 
 
@@ -69,7 +69,6 @@ async def DK(context):
     DK.add_field(name = "Fall Speed", value = "1.63 `[38-39]`", inline=False)
     DK.add_field(name = "Weight", value = "127 `[3-4]`", inline=True)
     DK.add_field(name = "Weightclass", value = "`Super Heavyweight`", inline=True)
-    DK.set_footer(text = "[X] = Rank out of 87.\n[X-Y] = More than 1 character has this rank.")
     await context.message.channel.send(file = file, embed = DK)
 
 
@@ -84,8 +83,81 @@ async def Link(context):
     Link.add_field(name = "Fall Speed", value = "1.6 `[42-46]`", inline=False)
     Link.add_field(name = "Weight", value = "104 `[21-25]`", inline=True)
     Link.add_field(name = "Weightclass", value = "`Heavyweight`", inline=True)
-    Link.set_footer(text = "[X] = Rank out of 87.\n[X-Y] = More than 1 character has this rank.")
     await context.message.channel.send(file = file, embed = Link)
+
+
+@client.command(name = "Samus")            #Samus Command: #4
+async def Samus(context):
+    file = discord.File("Images/SamusImage.png", filename = "image.png")
+    Samus = discord.Embed(title = "Metroid (1986)", type = "rich", description = "Charge Shot Pressure Exists", color = 0xff9e00)
+    Samus.set_thumbnail(url="attachment://image.png")
+    Samus.set_author(name = "#4: Samus", url = "https://open.spotify.com/track/1fy1z5EROb7b3tGHgc5fba?si=7589d8a106664bb5", icon_url = "https://ssb.wiki.gallery/images/d/d0/SamusHeadSSBUWebsite.png")
+    Samus.add_field(name = "Run Speed", value = "1.654 `[50-51]`", inline=True)
+    Samus.add_field(name = "Air Speed", value = "1.103 `[34-36]`", inline=True)
+    Samus.add_field(name = "Fall Speed", value = "1.33 `[73-74]`", inline=False)
+    Samus.add_field(name = "Weight", value = "108 `[9-12]`", inline=True)
+    Samus.add_field(name = "Weightclass", value = "`Heavyweight`", inline=True)
+    Samus.set_footer(text = "Exact same stats as Dark Samus \nCan: Wall Jump, Tether Recovery")
+    await context.message.channel.send(file = file, embed = Samus)
+
+
+@client.command(name = "DarkSamus")            #Dark Samus Command: #5
+async def DarkSamus(context):
+    file = discord.File("Images/DarkSamusImage.png", filename = "image.png")
+    DSamus = discord.Embed(title = "Metroid Prime (2002)", type = "rich", description = "'Technically' Better than Samus?", color = 0x5100ff)
+    DSamus.set_thumbnail(url="attachment://image.png")
+    DSamus.set_author(name = "#5: Dark Samus", url = "https://open.spotify.com/track/6IyEL4cPFXHWiVbLDdydoi?si=e3c423342fa94046", icon_url = "https://ssb.wiki.gallery/images/2/24/DarkSamusHeadSSBUWebsite.png")
+    DSamus.add_field(name = "Run Speed", value = "1.654 `[50-51]`", inline=True)
+    DSamus.add_field(name = "Air Speed", value = "1.103 `[34-36]`", inline=True)
+    DSamus.add_field(name = "Fall Speed", value = "1.33 `[73-74]`", inline=False)
+    DSamus.add_field(name = "Weight", value = "108 `[9-12]`", inline=True)
+    DSamus.add_field(name = "Weightclass", value = "`Heavyweight`", inline=True)
+    DSamus.set_footer(text = "Exact same stats and ranks as Samus \nCan: Wall Jump, Tether Recovery")
+    await context.message.channel.send(file = file, embed = DSamus)
+
+
+@client.command(name = "Yoshi")            #Yoshi Command: #6
+async def Yoshi(context):
+    file = discord.File("Images/YoshiImage.png", filename = "image.png")
+    Yoshi = discord.Embed(title = "Super Mario World (1990)", type = "rich", description = "Every Aerial is Busted", color = 0x31ff00)
+    Yoshi.set_thumbnail(url="attachment://image.png")
+    Yoshi.set_author(name = "#6: Yoshi", url = "https://open.spotify.com/track/2aFF05QA8gkXsX7Vv8UamP?si=0144388bea7a4259", icon_url = "https://ssb.wiki.gallery/images/9/93/YoshiHeadSSBUWebsite.png")
+    Yoshi.add_field(name = "Run Speed", value = "2.046 `[19]`", inline=True)
+    Yoshi.add_field(name = "Air Speed", value = "1.344 `[1]`", inline=True)
+    Yoshi.add_field(name = "Fall Speed", value = "1.29 `[81]`", inline=False)
+    Yoshi.add_field(name = "Weight", value = "104 `[21-25]`", inline=True)
+    Yoshi.add_field(name = "Weightclass", value = "`Heavyweight`", inline=True)
+    Yoshi.set_footer(text = "Fastest air speed in the game")
+    await context.message.channel.send(file = file, embed = Yoshi)
+
+
+@client.command(name = "Kirby")            #Kirby Command: #7
+async def Kirby(context):
+    file = discord.File("Images/KirbyImage.png", filename = "image.png")
+    Kirby = discord.Embed(title = "Kirby's Dream Land (1992)", type = "rich", description = "Neutral B Simps", color = 0xff008e)
+    Kirby.set_thumbnail(url="attachment://image.png")
+    Kirby.set_author(name = "#7: Kirby", url = "https://open.spotify.com/track/6yaFVOQLUI9RFTV9YVa6pZ?si=51bd337c18244cf1", icon_url = "https://ssb.wiki.gallery/images/1/15/KirbyHeadSSBUWebsite.png")
+    Kirby.add_field(name = "Run Speed", value = "1.727 `[42]`", inline=True)
+    Kirby.add_field(name = "Air Speed", value = "0.84 `[83]`", inline=True)
+    Kirby.add_field(name = "Fall Speed", value = "1.23 `[83]`", inline=False)
+    Kirby.add_field(name = "Weight", value = "79 `[77-81]`", inline=True)
+    Kirby.add_field(name = "Weightclass", value = "`Featherweight`", inline=True)
+    await context.message.channel.send(file = file, embed = Kirby)
+
+
+@client.command(name = "Fox")            #Fox Command: #8
+async def Fox(context):
+    file = discord.File("Images/FoxImage.png", filename = "image.png")
+    Fox = discord.Embed(title = "Star Fox (1993)", type = "rich", description = "Literally falls like a rock", color = 0xc3bbc0)
+    Fox.set_thumbnail(url="attachment://image.png")
+    Fox.set_author(name = "#8: Fox", url = "https://open.spotify.com/track/22JH2DGnfmUKblTnv6VvdC?si=548ac152f0264363", icon_url = "https://ssb.wiki.gallery/images/c/c9/FoxHeadSSBUWebsite.png")
+    Fox.add_field(name = "Run Speed", value = "2.402 `[6]`", inline=True)
+    Fox.add_field(name = "Air Speed", value = "1.11 `[33]`", inline=True)
+    Fox.add_field(name = "Fall Speed", value = "2.1 `[1]`", inline=False)
+    Fox.add_field(name = "Weight", value = "77 `[83]`", inline=True)
+    Fox.add_field(name = "Weightclass", value = "`Featherweight`", inline=True)
+    Fox.set_footer(text = "Can: Wall Jump \nHighest fall speed in the game")
+    await context.message.channel.send(file = file, embed = Fox)
 
 
 @client.command(name = 'Peach')         #Peach Command: #14
@@ -99,7 +171,7 @@ async def Peach(context):
     Peach.add_field(name = "Fall Speed", value = "1.19 `[85-86]`", inline=False)
     Peach.add_field(name = "Weight", value = "89 `[63-64]`", inline=True)
     Peach.add_field(name = "Weightclass", value = "`Lightweight`", inline=True)
-    Peach.set_footer(text = "[X] = Rank out of 87.\n[X-Y] = More than 1 character has this rank.")
+    Peach.set_footer(text = "Exact same stats and ranks as Daisy")
     await context.message.channel.send(file = file, embed = Peach)
 
 
@@ -114,7 +186,7 @@ async def Daisy(context):
     Daisy.add_field(name = "Fall Speed", value = "1.19 `[85-86]`", inline=False)
     Daisy.add_field(name = "Weight", value = "89 `[63-64]`", inline=True)
     Daisy.add_field(name = "Weightclass", value = "`Lightweight`", inline=True)
-    Daisy.set_footer(text = "[X] = Rank out of 87.\n[X-Y] = More than 1 character has this rank.")
+    Daisy.set_footer(text = "Exact same stats and ranks as Peach")
     await context.message.channel.send(file = file, embed = Daisy)
 
 client.run('ODE4MzM4NDYxNjQyNzg0NzY4.YEWnFQ.rOkL3TSSF9EDQpL7zsNUc035nj8')
