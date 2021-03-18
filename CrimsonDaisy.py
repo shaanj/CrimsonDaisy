@@ -160,6 +160,21 @@ async def Fox(context):
     await context.message.channel.send(file = file, embed = Fox)
 
 
+@client.command(name = "Pikachu")            #Pikachu Command: #9
+async def Pikachu(context):
+    file = discord.File("Images/PikachuImage.png", filename = "image.png")
+    Pikachu = discord.Embed(title = "Pokemon Red and Green (1996)", type = "rich", description = "I hate this character", color = 0xe9ff00)
+    Pikachu.set_thumbnail(url="attachment://image.png")
+    Pikachu.set_author(name = "#9: Pikachu", url = "https://open.spotify.com/track/1HALda7HkI64vntdlGSa3X?si=ad73a1ab67394bf8", icon_url = "https://ssb.wiki.gallery/images/5/52/PikachuHeadSSBUWebsite.png")
+    Pikachu.add_field(name = "Run Speed", value = "2.039 `[20]`", inline=True)
+    Pikachu.add_field(name = "Air Speed", value = "0.957 `[65]`", inline=True)
+    Pikachu.add_field(name = "Fall Speed", value = "1.55 `[52-55]`", inline=False)
+    Pikachu.add_field(name = "Weight", value = "79 `[77-81]`", inline=True)
+    Pikachu.add_field(name = "Weightclass", value = "`Featherweight`", inline=True)
+    Pikachu.set_footer(text = "Can: Wall Jump")
+    await context.message.channel.send(file = file, embed = Pikachu)
+
+
 @client.command(name = 'Peach')         #Peach Command: #14
 async def Peach(context):
     file = discord.File("Images/PeachImage.png", filename = "image.png")
