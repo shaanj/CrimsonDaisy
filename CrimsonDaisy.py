@@ -73,6 +73,21 @@ async def DK(context):
     await context.message.channel.send(file = file, embed = DK)
 
 
+@client.command(name = "Link")            #Link Command: #3
+async def Link(context):
+    file = discord.File("Images/LinkImage.png", filename = "image.png")
+    Link = discord.Embed(title = "The Legend of Zelda (1986)", type = "rich", description = "Spams from Specials", color = 0x00ffe8)
+    Link.set_thumbnail(url="attachment://image.png")
+    Link.set_author(name = "#3: Link", url = "https://open.spotify.com/track/78ogxEjGLVuQ3RSsYZokAL?si=2039b911326b4d68", icon_url = "https://ssb.wiki.gallery/images/2/2b/LinkHeadSSBUWebsite.png")
+    Link.add_field(name = "Run Speed", value = "1.534 `[69]`", inline=True)
+    Link.add_field(name = "Air Speed", value = "0.924 `[74-75]`", inline=True)
+    Link.add_field(name = "Fall Speed", value = "1.6 `[42-46]`", inline=False)
+    Link.add_field(name = "Weight", value = "104 `[21-25]`", inline=True)
+    Link.add_field(name = "Weightclass", value = "`Heavyweight`", inline=True)
+    Link.set_footer(text = "[X] = Rank out of 87.\n[X-Y] = More than 1 character has this rank.")
+    await context.message.channel.send(file = file, embed = Link)
+
+
 @client.command(name = 'Peach')         #Peach Command: #14
 async def Peach(context):
     file = discord.File("Images/PeachImage.png", filename = "image.png")
