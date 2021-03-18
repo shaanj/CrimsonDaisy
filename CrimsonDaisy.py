@@ -175,7 +175,21 @@ async def Pikachu(context):
     await context.message.channel.send(file = file, embed = Pikachu)
 
 
-@client.command(name = 'Peach')         #Peach Command: #14
+@client.command(name = "Luigi")            #Luigi Command: #10
+async def Luigi(context):
+    file = discord.File("Images/LuigiImage.png", filename = "image.png")
+    Luigi = discord.Embed(title = "Mario Bros. (1983)", type = "rich", description = "Killer Grab and Aerial Setups", color = 0x00ff4b)
+    Luigi.set_thumbnail(url="attachment://image.png")
+    Luigi.set_author(name = "#10: Luigi", url = "https://open.spotify.com/track/3sJ4smaOLXnHU4TIgE5xNz?si=eeabf5f43eaa40d7", icon_url = "https://ssb.wiki.gallery/images/9/9d/LuigiHeadSSBUWebsite.png")
+    Luigi.add_field(name = "Run Speed", value = "1.65 `[52-54]`", inline=True)
+    Luigi.add_field(name = "Air Speed", value = "0.77 `[86]`", inline=True)
+    Luigi.add_field(name = "Fall Speed", value = "1.32 `[75-76]`", inline=False)
+    Luigi.add_field(name = "Weight", value = "97 `[36-38]`", inline=True)
+    Luigi.add_field(name = "Weightclass", value = "`Middleweight`", inline=True)
+    await context.message.channel.send(file = file, embed = Luigi)
+
+
+@client.command(name = 'Peach')            #Peach Command: #14
 async def Peach(context):
     file = discord.File("Images/PeachImage.png", filename = "image.png")
     Peach = discord.Embed(title = "Super Mario Bros. (1985)", type = "rich", description = "Overrated, Float Cancels Still OP", color = 0xff008b)
@@ -190,7 +204,7 @@ async def Peach(context):
     await context.message.channel.send(file = file, embed = Peach)
 
 
-@client.command(name = 'Daisy')         #Daisy Command: #15
+@client.command(name = 'Daisy')            #Daisy Command: #15
 async def Daisy(context):
     file = discord.File("Images/DaisyImage.png", filename = "image.png")
     Daisy = discord.Embed(title = "Super Mario Land (1989)", type = "rich", description = "My Main, Float Cancels OP", color = 0xfca103)
