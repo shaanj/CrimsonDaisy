@@ -87,6 +87,7 @@ async def Peach(context):
     await context.message.channel.send(file = file, embed = Peach)
 
 
+
 @client.command(name = 'Daisy')         #Daisy Command: #15
 async def Daisy(context):
     file = discord.File("Images/DaisyImage.png", filename = "image.png")
