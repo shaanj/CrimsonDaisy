@@ -370,4 +370,19 @@ async def Falco(context):
     await context.message.channel.send(file = file, embed = Falco)
 
 
+@client.command(name = 'Marth')            #Marth Command: #23
+async def Marth(context):
+    file = discord.File("Images/MarthImage.png", filename = "image.png")
+    Marth = discord.Embed(title = "Fire Emblem: Shadow Dragon and the Blade of Light (1993)", type = "rich", description = "Just The Tip", color = 0x0074ff)
+    Marth.set_thumbnail(url="attachment://image.png")
+    Marth.set_author(name = "#23: Marth", url = "https://open.spotify.com/track/2Cn5v5xb9WqnxqPrEFwUjS?si=475aa9eb4b4b4256", icon_url = "https://ssb.wiki.gallery/images/a/ae/MarthHeadSSBUWebsite.png")
+    Marth.add_field(name = "Run Speed", value = "1.964 `[23-24]`", inline=True)
+    Marth.add_field(name = "Air Speed", value = "1.071 `[41-42]`", inline=True)
+    Marth.add_field(name = "Fall Speed", value = "1.58 `[47-50]`", inline=False)
+    Marth.add_field(name = "Weight", value = "90 `[60-62]`", inline=True)
+    Marth.add_field(name = "Weightclass", value = "`Middleweight`", inline=True)
+    Marth.set_footer(text = "Exact same stats and rank as Lucina \nOnly difference: Tip of the sword is stronger")
+    await context.message.channel.send(file = file, embed = Marth)
+
+
 client.run('ODE4MzM4NDYxNjQyNzg0NzY4.YEWnFQ.rOkL3TSSF9EDQpL7zsNUc035nj8')
