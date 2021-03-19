@@ -46,7 +46,7 @@ async def smash(context, user : discord.User = None):
 @client.command(name = 'Mario')         #Mario Command: #1
 async def Mario(context):
     file = discord.File("Images/MarioImage.png", filename = "image.png")
-    Mario = discord.Embed(title = "Donkey Kong (1981)", type = "rich", description = "Do Not Sit in Shield!", color = 0xff0000)
+    Mario = discord.Embed(title = "Donkey Kong (1981)", type = "rich", description = "Dunks on Dunks", color = 0xff0000)
     Mario.set_thumbnail(url="attachment://image.png")
     Mario.set_author(name = "#1: Mario", url = "https://open.spotify.com/track/53BIF7mH7UL7yTzOsKIoEw?si=2e2258ae59594ec8", icon_url = "https://ssb.wiki.gallery/images/9/9e/MarioHeadSSBUWebsite.png")
     Mario.add_field(name = "Run Speed", value = "1.76 `[37-40]`", inline=True)
@@ -61,7 +61,7 @@ async def Mario(context):
 @client.command(name = "DK")            #DK Command: #2
 async def DK(context):
     file = discord.File("Images/DKImage.png", filename = "image.png")
-    DK = discord.Embed(title = "Donkey Kong (1981)", type = "rich", description = "Combo Food", color = 0x97572b)
+    DK = discord.Embed(title = "Donkey Kong (1981)", type = "rich", description = "Cargo Throw is Fair", color = 0x97572b)
     DK.set_thumbnail(url="attachment://image.png")
     DK.set_author(name = "#2: Donkey Kong", url = "https://open.spotify.com/track/05kvH7fHTyjvoZz0dM02sI?si=4d6ff97781814380", icon_url = "https://ssb.wiki.gallery/images/2/21/DonkeyKongHeadSSBUWebsite.png")
     DK.add_field(name = "Run Speed", value = "1.873 `[29]`", inline=True)
@@ -75,7 +75,7 @@ async def DK(context):
 @client.command(name = "Link")            #Link Command: #3
 async def Link(context):
     file = discord.File("Images/LinkImage.png", filename = "image.png")
-    Link = discord.Embed(title = "The Legend of Zelda (1986)", type = "rich", description = "Spams from Specials", color = 0x00ffe8)
+    Link = discord.Embed(title = "The Legend of Zelda (1986)", type = "rich", description = "Just Keep Throwing Stuff", color = 0x00ffe8)
     Link.set_thumbnail(url="attachment://image.png")
     Link.set_author(name = "#3: Link", url = "https://open.spotify.com/track/78ogxEjGLVuQ3RSsYZokAL?si=2039b911326b4d68", icon_url = "https://ssb.wiki.gallery/images/2/2b/LinkHeadSSBUWebsite.png")
     Link.add_field(name = "Run Speed", value = "1.534 `[69]`", inline=True)
@@ -148,7 +148,7 @@ async def Kirby(context):
 @client.command(name = "Fox")            #Fox Command: #8
 async def Fox(context):
     file = discord.File("Images/FoxImage.png", filename = "image.png")
-    Fox = discord.Embed(title = "Star Fox (1993)", type = "rich", description = "Literally falls like a rock", color = 0xc3bbc0)
+    Fox = discord.Embed(title = "Star Fox (1993)", type = "rich", description = "Dwayne 'Falls Like a Rock' Johnson", color = 0xc3bbc0)
     Fox.set_thumbnail(url="attachment://image.png")
     Fox.set_author(name = "#8: Fox", url = "https://open.spotify.com/track/22JH2DGnfmUKblTnv6VvdC?si=548ac152f0264363", icon_url = "https://ssb.wiki.gallery/images/c/c9/FoxHeadSSBUWebsite.png")
     Fox.add_field(name = "Run Speed", value = "2.402 `[6]`", inline=True)
@@ -163,7 +163,7 @@ async def Fox(context):
 @client.command(name = "Pikachu")            #Pikachu Command: #9
 async def Pikachu(context):
     file = discord.File("Images/PikachuImage.png", filename = "image.png")
-    Pikachu = discord.Embed(title = "Pokemon Red and Green (1996)", type = "rich", description = "I hate this character", color = 0xe9ff00)
+    Pikachu = discord.Embed(title = "Pokemon Red and Green (1996)", type = "rich", description = "You're Going To Have A Bad Time", color = 0xe9ff00)
     Pikachu.set_thumbnail(url="attachment://image.png")
     Pikachu.set_author(name = "#9: Pikachu", url = "https://open.spotify.com/track/1HALda7HkI64vntdlGSa3X?si=ad73a1ab67394bf8", icon_url = "https://ssb.wiki.gallery/images/5/52/PikachuHeadSSBUWebsite.png")
     Pikachu.add_field(name = "Run Speed", value = "2.039 `[20]`", inline=True)
@@ -178,7 +178,7 @@ async def Pikachu(context):
 @client.command(name = "Luigi")            #Luigi Command: #10
 async def Luigi(context):
     file = discord.File("Images/LuigiImage.png", filename = "image.png")
-    Luigi = discord.Embed(title = "Mario Bros. (1983)", type = "rich", description = "Killer Grab and Aerial Setups", color = 0x00ff4b)
+    Luigi = discord.Embed(title = "Mario Bros. (1983)", type = "rich", description = "Discount Waluigi", color = 0x00ff4b)
     Luigi.set_thumbnail(url="attachment://image.png")
     Luigi.set_author(name = "#10: Luigi", url = "https://open.spotify.com/track/3sJ4smaOLXnHU4TIgE5xNz?si=eeabf5f43eaa40d7", icon_url = "https://ssb.wiki.gallery/images/9/9d/LuigiHeadSSBUWebsite.png")
     Luigi.add_field(name = "Run Speed", value = "1.65 `[52-54]`", inline=True)
@@ -192,7 +192,7 @@ async def Luigi(context):
 @client.command(name = "Ness")             #Ness Command: #11
 async def Ness(context):
     file = discord.File("Images/NessImage.png", filename = "image.png")
-    Ness = discord.Embed(title = "EarthBound (1994)", type = "rich", description = "Strong Back Throw & Bad Recovery", color = 0xff0000)
+    Ness = discord.Embed(title = "EarthBound (1994)", type = "rich", description = "PK Fire Spam Is Trash", color = 0xff0000)
     Ness.set_thumbnail(url="attachment://image.png")
     Ness.set_author(name = "#11: Ness", url = "https://open.spotify.com/track/3JlK5EtPgo2cykk5BtIJUo?si=9c782a41638a4749", icon_url = "https://ssb.wiki.gallery/images/d/d5/NessHeadSSBUWebsite.png")
     Ness.add_field(name = "Run Speed", value = "1.609 `[57]`", inline=True)
@@ -206,7 +206,7 @@ async def Ness(context):
 @client.command(name = "Falcon")           #Captain Falcon Command: #12
 async def Falcon(context):
     file = discord.File("Images/FalconImage.png", filename = "image.png")
-    Falcon = discord.Embed(title = "F-Zero (1990)", type = "rich", description = "Falcon Punch", color = 0x002dff)
+    Falcon = discord.Embed(title = "F-Zero (1990)", type = "rich", description = "Falcon Punch", color = 0x0074ff)
     Falcon.set_thumbnail(url="attachment://image.png")
     Falcon.set_author(name = "#12: Captain Falcon", url = "https://open.spotify.com/track/6A8OpxPRBP8p4kE3fZEa1Q?si=e94d49541e6b456c", icon_url = "https://ssb.wiki.gallery/images/6/6b/CaptainFalconHeadSSBUWebsite.png")
     Falcon.add_field(name = "Run Speed", value = "2.552 `[2]`", inline=True)
@@ -285,7 +285,7 @@ async def Bowser(context):
 @client.command(name = 'Icies')            #Ice Climbers Command: #17
 async def Icies(context):
     file = discord.File("Images/IciesImage.png", filename = "image.png")
-    Icies = discord.Embed(title = "Ice Climber (1985)", type = "rich", description = "Get Rid of Nana = Win", color = 0x2082f0)
+    Icies = discord.Embed(title = "Ice Climber (1985)", type = "rich", description = "Nana Hard Carries", color = 0x2082f0)
     Icies.set_thumbnail(url="attachment://image.png")
     Icies.set_author(name = "#17: Ice Climbers", url = "https://open.spotify.com/track/0I29UjYWT3zIjPLqB6h5GV?si=e871653946244d26", icon_url = "https://ssb.wiki.gallery/images/0/0c/IceClimbersHeadSSBUWebsite.png")
     Icies.add_field(name = "Run Speed", value = "1.53 `[70]`", inline=True)
@@ -314,7 +314,7 @@ async def Sheik(context):
 @client.command(name = 'Zelda')            #Zelda Command: #19
 async def Zelda(context):
     file = discord.File("Images/ZeldaImage.png", filename = "image.png")
-    Zelda = discord.Embed(title = "The Legend of Zelda (1986)", type = "rich", description = "Neutral B is a scary move", color = 0xdd92ee)
+    Zelda = discord.Embed(title = "The Legend of Zelda (1986)", type = "rich", description = "Phantom Mechanics", color = 0xdd92ee)
     Zelda.set_thumbnail(url="attachment://image.png")
     Zelda.set_author(name = "#19: Zelda", url = "https://open.spotify.com/track/2TlSTYsyVP3ZOEaA81bnBc?si=0444ae37db524ba1", icon_url = "https://ssb.wiki.gallery/images/c/c8/ZeldaHeadSSBUWebsite.png")
     Zelda.add_field(name = "Run Speed", value = "1.43 `[78-79]`", inline=True)
@@ -353,6 +353,21 @@ async def Pichu(context):
     Pichu.add_field(name = "Weightclass", value = "`Balloonweight`", inline=True)
     Pichu.set_footer(text = "Can: Wall Jump \nLightest character in the game")
     await context.message.channel.send(file = file, embed = Pichu)
+
+
+@client.command(name = 'Falco')            #Falco Command: #22
+async def Falco(context):
+    file = discord.File("Images/FalcoImage.png", filename = "image.png")
+    Falco = discord.Embed(title = "Star Fox (1993)", type = "rich", description = "That Ain't Falco", color = 0x0074ff)
+    Falco.set_thumbnail(url="attachment://image.png")
+    Falco.set_author(name = "#22: Falco", url = "https://open.spotify.com/track/3ME5GLvAN1FroRF4qFNXjW?si=7c5b0dfdb9b847a1", icon_url = "https://ssb.wiki.gallery/images/6/6e/FalcoHeadSSBUWebsite.png")
+    Falco.add_field(name = "Run Speed", value = "1.619 `[55]`", inline=True)
+    Falco.add_field(name = "Air Speed", value = "0.977 `[63]`", inline=True)
+    Falco.add_field(name = "Fall Speed", value = "1.8 `[13-18]`", inline=False)
+    Falco.add_field(name = "Weight", value = "82 `[72-73]`", inline=True)
+    Falco.add_field(name = "Weightclass", value = "`Featherweight`", inline=True)
+    Falco.set_footer(text = "Can: Wall Jump")
+    await context.message.channel.send(file = file, embed = Falco)
 
 
 client.run('ODE4MzM4NDYxNjQyNzg0NzY4.YEWnFQ.rOkL3TSSF9EDQpL7zsNUc035nj8')
