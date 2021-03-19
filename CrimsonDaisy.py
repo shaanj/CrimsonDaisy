@@ -203,6 +203,40 @@ async def Ness(context):
     await context.message.channel.send(file = file, embed = Ness)
 
 
+@client.command(name = "Falcon")           #Captain Falcon Command: #12
+async def Falcon(context):
+    file = discord.File("Images/FalconImage.png", filename = "image.png")
+    Falcon = discord.Embed(title = "F-Zero (1990)", type = "rich", description = "Falcon Punch", color = 0x002dff)
+    Falcon.set_thumbnail(url="attachment://image.png")
+    Falcon.set_author(name = "#12: Captain Falcon", url = "https://open.spotify.com/track/6A8OpxPRBP8p4kE3fZEa1Q?si=e94d49541e6b456c", icon_url = "https://ssb.wiki.gallery/images/6/6b/CaptainFalconHeadSSBUWebsite.png")
+    Falcon.add_field(name = "Run Speed", value = "2.552 `[2]`", inline=True)
+    Falcon.add_field(name = "Air Speed", value = "1.218 `[12]`", inline=True)
+    Falcon.add_field(name = "Fall Speed", value = "1.865 `[8]`", inline=False)
+    Falcon.add_field(name = "Weight", value = "104 `[21-25]`", inline=True)
+    Falcon.add_field(name = "Weightclass", value = "`Heavyweight`", inline=True)
+    Falcon.set_footer(text = "Can: Wall Jump")
+    await context.message.channel.send(file = file, embed = Falcon)
+
+
+@client.command(name = "Puff")       #Jigglypuff Command: #13
+async def Puff(context):
+    file = discord.File("Images/PuffImage.png", filename = "image.png")
+    Puff = discord.Embed(title = "Pokemon Red and Green (1996)", type = "rich", description = "HungryBox", color = 0xf89fff)
+    Puff.set_thumbnail(url="attachment://image.png")
+    Puff.set_author(name = "#13: Jigglypuff", url = "https://open.spotify.com/track/1WPMIgPIBsY0oMhWOTfXXQ?si=ad0090dc8f9b4a72", icon_url = "https://ssb.wiki.gallery/images/9/90/JigglypuffHeadSSBUWebsite.png")
+    Puff.add_field(name = "Run Speed", value = "1.271 `[85]`", inline=True)
+    Puff.add_field(name = "Air Speed", value = "1.332 `[2]`", inline=True)
+    Puff.add_field(name = "Fall Speed", value = "0.98 `[87]`", inline=False)
+    Puff.add_field(name = "Weight", value = "68 `[86]`", inline=True)
+    Puff.add_field(name = "Weightclass", value = "`Balloonweight`", inline=True)
+    Puff.set_footer(text = "Slowest fall speed (floatiest) in the game")
+    await context.message.channel.send(file = file, embed = Puff)
+
+
+
+
+
+
 @client.command(name = 'Peach')            #Peach Command: #14
 async def Peach(context):
     file = discord.File("Images/PeachImage.png", filename = "image.png")
@@ -231,5 +265,79 @@ async def Daisy(context):
     Daisy.add_field(name = "Weightclass", value = "`Lightweight`", inline=True)
     Daisy.set_footer(text = "Exact same stats and ranks as Peach")
     await context.message.channel.send(file = file, embed = Daisy)
+
+
+@client.command(name = 'Bowser')            #Bowser Command: #16
+async def Bowser(context):
+    file = discord.File("Images/BowserImage.png", filename = "image.png")
+    Bowser = discord.Embed(title = "Super Mario Bros. (1985)", type = "rich", description = "Always Dies 200+ Percent", color = 0xed9600)
+    Bowser.set_thumbnail(url="attachment://image.png")
+    Bowser.set_author(name = "#16: Bowser", url = "https://open.spotify.com/track/7C5irIYGVe9xHfJX0Dt5Lf?si=6ea98b3dde0d4fb7", icon_url = "https://ssb.wiki.gallery/images/0/0b/BowserHeadSSBUWebsite.png")
+    Bowser.add_field(name = "Run Speed", value = "1.971 `[22]`", inline=True)
+    Bowser.add_field(name = "Air Speed", value = "1.155 `[20-25]`", inline=True)
+    Bowser.add_field(name = "Fall Speed", value = "1.77 `[20-21]`", inline=False)
+    Bowser.add_field(name = "Weight", value = "135 `[1]`", inline=True)
+    Bowser.add_field(name = "Weightclass", value = "`Super Heavyweight`", inline=True)
+    Bowser.set_footer(text = "Heaviest character in the game")
+    await context.message.channel.send(file = file, embed = Bowser)
+
+
+@client.command(name = 'Icies')            #Ice Climbers Command: #17
+async def Icies(context):
+    file = discord.File("Images/IciesImage.png", filename = "image.png")
+    Icies = discord.Embed(title = "Ice Climber (1985)", type = "rich", description = "Get Rid of Nana = Win", color = 0x2082f0)
+    Icies.set_thumbnail(url="attachment://image.png")
+    Icies.set_author(name = "#17: Ice Climbers", url = "https://open.spotify.com/track/0I29UjYWT3zIjPLqB6h5GV?si=e871653946244d26", icon_url = "https://ssb.wiki.gallery/images/0/0c/IceClimbersHeadSSBUWebsite.png")
+    Icies.add_field(name = "Run Speed", value = "1.53 `[70]`", inline=True)
+    Icies.add_field(name = "Air Speed", value = "0.83 `[84-85]`", inline=True)
+    Icies.add_field(name = "Fall Speed", value = "1.3 `[78-80]`", inline=False)
+    Icies.add_field(name = "Weight", value = "92 `[52-57]`", inline=True)
+    Icies.add_field(name = "Weightclass", value = "`Middleweight`", inline=True)
+    await context.message.channel.send(file = file, embed = Icies)
+
+
+@client.command(name = 'Sheik')            #Sheik Command: #18
+async def Sheik(context):
+    file = discord.File("Images/SheikImage.png", filename = "image.png")
+    Sheik = discord.Embed(title = "The Legend of Zelda: Ocarina of Time (1998)", type = "rich", description = "Gutted From Smash 4", color = 0xb57be2)
+    Sheik.set_thumbnail(url="attachment://image.png")
+    Sheik.set_author(name = "#18: Sheik", url = "https://open.spotify.com/track/4OhdW1oEYxLKLsOrznmC0s?si=6ec46041acf44bf7", icon_url = "https://ssb.wiki.gallery/images/1/1e/SheikHeadSSBUWebsite.png")
+    Sheik.add_field(name = "Run Speed", value = "2.42 `[4]`", inline=True)
+    Sheik.add_field(name = "Air Speed", value = "1.155 `[20-25]`", inline=True)
+    Sheik.add_field(name = "Fall Speed", value = "1.75 `[24-25]`", inline=False)
+    Sheik.add_field(name = "Weight", value = "78 `[82]`", inline=True)
+    Sheik.add_field(name = "Weightclass", value = "`Featherweight`", inline=True)
+    Sheik.set_footer(text = "Can: Wall Jump, Wall Cling")
+    await context.message.channel.send(file = file, embed = Sheik)
+
+
+@client.command(name = 'Zelda')            #Zelda Command: #19
+async def Zelda(context):
+    file = discord.File("Images/ZeldaImage.png", filename = "image.png")
+    Zelda = discord.Embed(title = "The Legend of Zelda (1986)", type = "rich", description = "Neutral B is a scary move", color = 0xdd92ee)
+    Zelda.set_thumbnail(url="attachment://image.png")
+    Zelda.set_author(name = "#19: Zelda", url = "https://open.spotify.com/track/2TlSTYsyVP3ZOEaA81bnBc?si=0444ae37db524ba1", icon_url = "https://ssb.wiki.gallery/images/c/c8/ZeldaHeadSSBUWebsite.png")
+    Zelda.add_field(name = "Run Speed", value = "1.43 `[78-79]`", inline=True)
+    Zelda.add_field(name = "Air Speed", value = "1.092 `[39-40]`", inline=True)
+    Zelda.add_field(name = "Fall Speed", value = "1.35 `[69-72]`", inline=False)
+    Zelda.add_field(name = "Weight", value = "85 `[71]`", inline=True)
+    Zelda.add_field(name = "Weightclass", value = "`Lightweight`", inline=True)
+    await context.message.channel.send(file = file, embed = Zelda)
+
+
+@client.command(name = 'Doc')            #Dr. Mario Command: #20
+async def Doc(context):
+    file = discord.File("Images/DocImage.png", filename = "image.png")
+    Doc = discord.Embed(title = "Dr. Mario (1990)", type = "rich", description = "Back Throw Yeets People", color = 0x60979e)
+    Doc.set_thumbnail(url="attachment://image.png")
+    Doc.set_author(name = "#20: Dr. Mario", url = "https://open.spotify.com/track/1zAecnWOvzfFuAEIyUfZs5?si=8e34c9d823a846bd", icon_url = "https://ssb.wiki.gallery/images/c/c8/DrMarioHeadSSBUWebsite.png")
+    Doc.add_field(name = "Run Speed", value = "1.397792 `[80]`", inline=True)
+    Doc.add_field(name = "Air Speed", value = "0.9238784 `[76]`", inline=True)
+    Doc.add_field(name = "Fall Speed", value = "1.5 `[57-60]`", inline=False)
+    Doc.add_field(name = "Weight", value = "98 `[32-35]`", inline=True)
+    Doc.add_field(name = "Weightclass", value = "`Middleweight`", inline=True)
+    Doc.set_footer(text = "Can: Wall Jump \nI can't believe that those are his actual stats!")
+    await context.message.channel.send(file = file, embed = Doc)
+
 
 client.run('ODE4MzM4NDYxNjQyNzg0NzY4.YEWnFQ.rOkL3TSSF9EDQpL7zsNUc035nj8')
