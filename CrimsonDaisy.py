@@ -340,4 +340,19 @@ async def Doc(context):
     await context.message.channel.send(file = file, embed = Doc)
 
 
+@client.command(name = 'Pichu')            #Pichu Command: #21
+async def Pichu(context):
+    file = discord.File("Images/PichuImage.png", filename = "image.png")
+    Pichu = discord.Embed(title = "Pokemon Gold and Silver (1999)", type = "rich", description = "Dumb Yellow Rat", color = 0xf8ff00)
+    Pichu.set_thumbnail(url="attachment://image.png")
+    Pichu.set_author(name = "#21: Pichu", url = "https://open.spotify.com/track/0Qaavj6icd6p3BAnwGEtG9?si=63f8b729549548cd", icon_url = "https://ssb.wiki.gallery/images/5/50/PichuHeadSSBUWebsite.png")
+    Pichu.add_field(name = "Run Speed", value = "1.892 `[28]`", inline=True)
+    Pichu.add_field(name = "Air Speed", value = "1.029 `[48-50]`", inline=True)
+    Pichu.add_field(name = "Fall Speed", value = "1.9 `[6]`", inline=False)
+    Pichu.add_field(name = "Weight", value = "62 `[87]`", inline=True)
+    Pichu.add_field(name = "Weightclass", value = "`Balloonweight`", inline=True)
+    Pichu.set_footer(text = "Can: Wall Jump \nLightest character in the game")
+    await context.message.channel.send(file = file, embed = Pichu)
+
+
 client.run('ODE4MzM4NDYxNjQyNzg0NzY4.YEWnFQ.rOkL3TSSF9EDQpL7zsNUc035nj8')
