@@ -43,7 +43,7 @@ async def smash(context, user : discord.User = None):
 
 
                                         
-@client.command(name = 'Mario')         #Mario Command: #1
+@client.command(name = 'Mario')            #Mario Command: #1
 async def Mario(context):
     file = discord.File("Images/MarioImage.png", filename = "image.png")
     Mario = discord.Embed(title = "Donkey Kong (1981)", type = "rich", description = "Dunks on Dunks", color = 0xff0000)
@@ -58,7 +58,7 @@ async def Mario(context):
     await context.message.channel.send(file = file, embed = Mario)
 
 
-@client.command(name = "DK")            #DK Command: #2
+@client.command(name = "DK")               #Donkey Kong Command: #2
 async def DK(context):
     file = discord.File("Images/DKImage.png", filename = "image.png")
     DK = discord.Embed(title = "Donkey Kong (1981)", type = "rich", description = "Cargo Throw is Fair", color = 0x97572b)
@@ -72,7 +72,7 @@ async def DK(context):
     await context.message.channel.send(file = file, embed = DK)
 
 
-@client.command(name = "Link")            #Link Command: #3
+@client.command(name = "Link")             #Link Command: #3
 async def Link(context):
     file = discord.File("Images/LinkImage.png", filename = "image.png")
     Link = discord.Embed(title = "The Legend of Zelda (1986)", type = "rich", description = "Just Keep Throwing Stuff", color = 0x00ffe8)
@@ -97,11 +97,11 @@ async def Samus(context):
     Samus.add_field(name = "Fall Speed", value = "1.33 `[73-74]`", inline=False)
     Samus.add_field(name = "Weight", value = "108 `[9-12]`", inline=True)
     Samus.add_field(name = "Weightclass", value = "`Heavyweight`", inline=True)
-    Samus.set_footer(text = "Exact same stats as Dark Samus \nCan: Wall Jump, Tether Recovery")
+    Samus.set_footer(text = "Exact same stats and ranks as Dark Samus \nCan: Wall Jump, Tether Recovery")
     await context.message.channel.send(file = file, embed = Samus)
 
 
-@client.command(name = "DarkSamus")            #Dark Samus Command: #5
+@client.command(name = "DarkSamus")        #Dark Samus Command: #5
 async def DarkSamus(context):
     file = discord.File("Images/DarkSamusImage.png", filename = "image.png")
     DSamus = discord.Embed(title = "Metroid Prime (2002)", type = "rich", description = "'Technically' Better than Samus?", color = 0x5100ff)
@@ -145,7 +145,7 @@ async def Kirby(context):
     await context.message.channel.send(file = file, embed = Kirby)
 
 
-@client.command(name = "Fox")            #Fox Command: #8
+@client.command(name = "Fox")              #Fox Command: #8
 async def Fox(context):
     file = discord.File("Images/FoxImage.png", filename = "image.png")
     Fox = discord.Embed(title = "Star Fox (1993)", type = "rich", description = "Dwayne 'Falls Like a Rock' Johnson", color = 0xc3bbc0)
@@ -160,7 +160,7 @@ async def Fox(context):
     await context.message.channel.send(file = file, embed = Fox)
 
 
-@client.command(name = "Pikachu")            #Pikachu Command: #9
+@client.command(name = "Pikachu")          #Pikachu Command: #9
 async def Pikachu(context):
     file = discord.File("Images/PikachuImage.png", filename = "image.png")
     Pikachu = discord.Embed(title = "Pokemon Red and Green (1996)", type = "rich", description = "You're Going To Have A Bad Time", color = 0xe9ff00)
@@ -218,7 +218,7 @@ async def Falcon(context):
     await context.message.channel.send(file = file, embed = Falcon)
 
 
-@client.command(name = "Puff")       #Jigglypuff Command: #13
+@client.command(name = "Puff")             #Jigglypuff Command: #13
 async def Puff(context):
     file = discord.File("Images/PuffImage.png", filename = "image.png")
     Puff = discord.Embed(title = "Pokemon Red and Green (1996)", type = "rich", description = "HungryBox", color = 0xf89fff)
@@ -231,6 +231,8 @@ async def Puff(context):
     Puff.add_field(name = "Weightclass", value = "`Balloonweight`", inline=True)
     Puff.set_footer(text = "Slowest fall speed (floatiest) in the game")
     await context.message.channel.send(file = file, embed = Puff)
+
+
 
 
 
@@ -267,7 +269,7 @@ async def Daisy(context):
     await context.message.channel.send(file = file, embed = Daisy)
 
 
-@client.command(name = 'Bowser')            #Bowser Command: #16
+@client.command(name = 'Bowser')           #Bowser Command: #16
 async def Bowser(context):
     file = discord.File("Images/BowserImage.png", filename = "image.png")
     Bowser = discord.Embed(title = "Super Mario Bros. (1985)", type = "rich", description = "Always Dies 200+ Percent", color = 0xed9600)
@@ -325,7 +327,7 @@ async def Zelda(context):
     await context.message.channel.send(file = file, embed = Zelda)
 
 
-@client.command(name = 'Doc')            #Dr. Mario Command: #20
+@client.command(name = 'Doc')         #Dr. Mario Command: #20
 async def Doc(context):
     file = discord.File("Images/DocImage.png", filename = "image.png")
     Doc = discord.Embed(title = "Dr. Mario (1990)", type = "rich", description = "Back Throw Yeets People", color = 0x60979e)
@@ -383,6 +385,58 @@ async def Marth(context):
     Marth.add_field(name = "Weightclass", value = "`Middleweight`", inline=True)
     Marth.set_footer(text = "Exact same stats and rank as Lucina \nOnly difference: Tip of the sword is stronger")
     await context.message.channel.send(file = file, embed = Marth)
+
+
+@client.command(name = 'Lucina')           #Lucina Command: #24
+async def Lucina(context):
+    file = discord.File("Images/LucinaImage.png", filename = "image.png")
+    Lucina = discord.Embed(title = "Fire Emblem Awakening (2012)", type = "rich", description = "Real Marth, Too Safe", color = 0x0152b3)
+    Lucina.set_thumbnail(url="attachment://image.png")
+    Lucina.set_author(name = "#24: Lucina", url = "https://open.spotify.com/track/1EV465Il8JJQlwJQQmXCn6?si=dd845cd0c7154354", icon_url = "https://ssb.wiki.gallery/images/d/d8/LucinaHeadSSBUWebsite.png")
+    Lucina.add_field(name = "Run Speed", value = "1.964 `[23-24]`", inline=True)
+    Lucina.add_field(name = "Air Speed", value = "1.071 `[41-42]`", inline=True)
+    Lucina.add_field(name = "Fall Speed", value = "1.58 `[47-50]`", inline=False)
+    Lucina.add_field(name = "Weight", value = "90 `[60-62]`", inline=True)
+    Lucina.add_field(name = "Weightclass", value = "`Middleweight`", inline=True)
+    Lucina.set_footer(text = "Exact same stats and rank as Marth \nOnly difference: All parts of the sword are strong")
+    await context.message.channel.send(file = file, embed = Lucina)
+
+
+@client.command(name = 'YoungLink')        #Young Link Command: #25
+async def YoungLink(context):
+    file = discord.File("Images/YoungLinkImage.png", filename = "image.png")
+    YLink = discord.Embed(title = "The Legend of Zelda: Ocarina of Time (1998)", type = "rich", description = "The Most Annoying Link", color = 0x00ff4b)
+    YLink.set_thumbnail(url="attachment://image.png")
+    YLink.set_author(name = "#25: Young Link", url = "https://open.spotify.com/track/4eA9VHcNALbJh4cLcCWHWs?si=a3901eab68d54ee2", icon_url = "https://ssb.wiki.gallery/images/c/c0/YoungLinkHeadSSBUWebsite.png")
+    YLink.add_field(name = "Run Speed", value = "1.749 `[41]`", inline=True)
+    YLink.add_field(name = "Air Speed", value = "0.966 `[64]`", inline=True)
+    YLink.add_field(name = "Fall Speed", value = "1.8 `[13-18]`", inline=False)
+    YLink.add_field(name = "Weight", value = "88 `[65-67]`", inline=True)
+    YLink.add_field(name = "Weightclass", value = "`Lightweight`", inline=True)
+    YLink.set_footer(text = "Can: Wall Jump, Tether Recovery")
+    await context.message.channel.send(file = file, embed = YLink)
+
+
+@client.command(name = 'Ganondorf')        #Ganondorf Command: #26
+async def Ganondorf(context):
+    file = discord.File("Images/GanondorfImage.png", filename = "image.png")
+    Ganon = discord.Embed(title = "The Legend of Zelda: Ocarina of Time (1998)", type = "rich", description = "The King of Disrespect", color = 0x5400b8)
+    Ganon.set_thumbnail(url="attachment://image.png")
+    Ganon.set_author(name = "#26: Ganondorf", url = "https://open.spotify.com/track/7kWqgvTLq4pb5nGqtwJREJ?si=ebd635b0f04445e5", icon_url = "https://ssb.wiki.gallery/images/b/b6/GanondorfHeadSSBUWebsite.png")
+    Ganon.add_field(name = "Run Speed", value = "1.34 `[84]`", inline=True)
+    Ganon.add_field(name = "Air Speed", value = "0.83 `[84-85]`", inline=True)
+    Ganon.add_field(name = "Fall Speed", value = "1.65 `[32-37]`", inline=False)
+    Ganon.add_field(name = "Weight", value = "118 `[5]`", inline=True)
+    Ganon.add_field(name = "Weightclass", value = "`Super Heavyweight`", inline=True)
+    await context.message.channel.send(file = file, embed = Ganon)
+
+
+
+
+
+
+
+
 
 
 client.run('ODE4MzM4NDYxNjQyNzg0NzY4.YEWnFQ.rOkL3TSSF9EDQpL7zsNUc035nj8')
