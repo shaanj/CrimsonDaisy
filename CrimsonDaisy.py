@@ -228,7 +228,7 @@ async def Puff(context):
 @client.command(name = 'Peach')            #Peach Command: #14
 async def Peach(context):
     Peach = discord.Embed(title = "Super Mario Bros. (1985)", type = "rich", description = "Overrated, Float Cancels Still OP", color = 0xff008b)
-    Peach.set_thumbnail(url="attachment://image.png")
+    Peach.set_thumbnail(url="https://ssb.wiki.gallery/images/7/74/Peach_SSBU.png")
     Peach.set_author(name = "#14: Peach", url = "https://open.spotify.com/track/126jlTTSRGaZ5WX8e4Tv7M?si=1de226102cb44eba", icon_url = "https://ssb.wiki.gallery/images/1/14/PeachHeadSSBUWebsite.png")
     Peach.add_field(name = "Run Speed", value = "1.595 `[60-64]`", inline=True)
     Peach.add_field(name = "Air Speed", value = "1.029 `[48-50]`", inline=True)
@@ -256,7 +256,7 @@ async def Daisy(context):
 @client.command(name = 'Bowser')           #Bowser Command: #16
 async def Bowser(context):
     Bowser = discord.Embed(title = "Super Mario Bros. (1985)", type = "rich", description = "Always Dies 200+ Percent", color = 0xed9600)
-    Bowser.set_thumbnail(url="attachment://image.png")
+    Bowser.set_thumbnail(url="https://ssb.wiki.gallery/images/4/49/Bowser_SSBU.png")
     Bowser.set_author(name = "#16: Bowser", url = "https://open.spotify.com/track/7C5irIYGVe9xHfJX0Dt5Lf?si=6ea98b3dde0d4fb7", icon_url = "https://ssb.wiki.gallery/images/0/0b/BowserHeadSSBUWebsite.png")
     Bowser.add_field(name = "Run Speed", value = "1.971 `[22]`", inline=True)
     Bowser.add_field(name = "Air Speed", value = "1.155 `[20-25]`", inline=True)
@@ -270,7 +270,7 @@ async def Bowser(context):
 @client.command(name = 'Icies')            #Ice Climbers Command: #17
 async def Icies(context):
     Icies = discord.Embed(title = "Ice Climber (1985)", type = "rich", description = "Nana Hard Carries", color = 0x2082f0)
-    Icies.set_thumbnail(url="attachment://image.png")
+    Icies.set_thumbnail(url="https://ssb.wiki.gallery/images/1/12/Ice_Climbers_SSBU.png")
     Icies.set_author(name = "#17: Ice Climbers", url = "https://open.spotify.com/track/0I29UjYWT3zIjPLqB6h5GV?si=e871653946244d26", icon_url = "https://ssb.wiki.gallery/images/0/0c/IceClimbersHeadSSBUWebsite.png")
     Icies.add_field(name = "Run Speed", value = "1.53 `[70]`", inline=True)
     Icies.add_field(name = "Air Speed", value = "0.83 `[84-85]`", inline=True)
@@ -283,7 +283,7 @@ async def Icies(context):
 @client.command(name = 'Sheik')            #Sheik Command: #18
 async def Sheik(context):
     Sheik = discord.Embed(title = "The Legend of Zelda: Ocarina of Time (1998)", type = "rich", description = "Gutted From Smash 4", color = 0xb57be2)
-    Sheik.set_thumbnail(url="attachment://image.png")
+    Sheik.set_thumbnail(url="https://ssb.wiki.gallery/images/0/00/Sheik_SSBU.png")
     Sheik.set_author(name = "#18: Sheik", url = "https://open.spotify.com/track/4OhdW1oEYxLKLsOrznmC0s?si=6ec46041acf44bf7", icon_url = "https://ssb.wiki.gallery/images/1/1e/SheikHeadSSBUWebsite.png")
     Sheik.add_field(name = "Run Speed", value = "2.42 `[4]`", inline=True)
     Sheik.add_field(name = "Air Speed", value = "1.155 `[20-25]`", inline=True)
@@ -297,7 +297,7 @@ async def Sheik(context):
 @client.command(name = 'Zelda')            #Zelda Command: #19
 async def Zelda(context):
     Zelda = discord.Embed(title = "The Legend of Zelda (1986)", type = "rich", description = "Phantom Mechanics", color = 0xdd92ee)
-    Zelda.set_thumbnail(url="attachment://image.png")
+    Zelda.set_thumbnail(url="https://ssb.wiki.gallery/images/c/c8/Zelda_SSBU.png")
     Zelda.set_author(name = "#19: Zelda", url = "https://open.spotify.com/track/2TlSTYsyVP3ZOEaA81bnBc?si=0444ae37db524ba1", icon_url = "https://ssb.wiki.gallery/images/c/c8/ZeldaHeadSSBUWebsite.png")
     Zelda.add_field(name = "Run Speed", value = "1.43 `[78-79]`", inline=True)
     Zelda.add_field(name = "Air Speed", value = "1.092 `[39-40]`", inline=True)
@@ -310,7 +310,7 @@ async def Zelda(context):
 @client.command(name = 'Doc')         #Dr. Mario Command: #20
 async def Doc(context):
     Doc = discord.Embed(title = "Dr. Mario (1990)", type = "rich", description = "Back Throw Yeets People", color = 0x60979e)
-    Doc.set_thumbnail(url="attachment://image.png")
+    Doc.set_thumbnail(url="https://ssb.wiki.gallery/images/3/3f/Dr._Mario_SSBU.png")
     Doc.set_author(name = "#20: Dr. Mario", url = "https://open.spotify.com/track/1zAecnWOvzfFuAEIyUfZs5?si=8e34c9d823a846bd", icon_url = "https://ssb.wiki.gallery/images/c/c8/DrMarioHeadSSBUWebsite.png")
     Doc.add_field(name = "Run Speed", value = "1.397792 `[80]`", inline=True)
     Doc.add_field(name = "Air Speed", value = "0.9238784 `[76]`", inline=True)
@@ -324,7 +324,7 @@ async def Doc(context):
 @client.command(name = 'Pichu')            #Pichu Command: #21
 async def Pichu(context):
     Pichu = discord.Embed(title = "Pokemon Gold and Silver (1999)", type = "rich", description = "Dumb Yellow Rat", color = 0xf8ff00)
-    Pichu.set_thumbnail(url="attachment://image.png")
+    Pichu.set_thumbnail(url="https://ssb.wiki.gallery/images/c/c1/Pichu_SSBU.png")
     Pichu.set_author(name = "#21: Pichu", url = "https://open.spotify.com/track/0Qaavj6icd6p3BAnwGEtG9?si=63f8b729549548cd", icon_url = "https://ssb.wiki.gallery/images/5/50/PichuHeadSSBUWebsite.png")
     Pichu.add_field(name = "Run Speed", value = "1.892 `[28]`", inline=True)
     Pichu.add_field(name = "Air Speed", value = "1.029 `[48-50]`", inline=True)
@@ -338,7 +338,7 @@ async def Pichu(context):
 @client.command(name = 'Falco')            #Falco Command: #22
 async def Falco(context):
     Falco = discord.Embed(title = "Star Fox (1993)", type = "rich", description = "That Ain't Falco", color = 0x0074ff)
-    Falco.set_thumbnail(url="attachment://image.png")
+    Falco.set_thumbnail(url="https://ssb.wiki.gallery/images/8/80/Falco_SSBU.png")
     Falco.set_author(name = "#22: Falco", url = "https://open.spotify.com/track/3ME5GLvAN1FroRF4qFNXjW?si=7c5b0dfdb9b847a1", icon_url = "https://ssb.wiki.gallery/images/6/6e/FalcoHeadSSBUWebsite.png")
     Falco.add_field(name = "Run Speed", value = "1.619 `[55]`", inline=True)
     Falco.add_field(name = "Air Speed", value = "0.977 `[63]`", inline=True)
@@ -352,7 +352,7 @@ async def Falco(context):
 @client.command(name = 'Marth')            #Marth Command: #23
 async def Marth(context):
     Marth = discord.Embed(title = "Fire Emblem: Shadow Dragon and the Blade of Light (1993)", type = "rich", description = "Just The Tip", color = 0x0074ff)
-    Marth.set_thumbnail(url="attachment://image.png")
+    Marth.set_thumbnail(url="https://ssb.wiki.gallery/images/e/e9/Marth_SSBU.png")
     Marth.set_author(name = "#23: Marth", url = "https://open.spotify.com/track/2Cn5v5xb9WqnxqPrEFwUjS?si=475aa9eb4b4b4256", icon_url = "https://ssb.wiki.gallery/images/a/ae/MarthHeadSSBUWebsite.png")
     Marth.add_field(name = "Run Speed", value = "1.964 `[23-24]`", inline=True)
     Marth.add_field(name = "Air Speed", value = "1.071 `[41-42]`", inline=True)
@@ -366,7 +366,7 @@ async def Marth(context):
 @client.command(name = 'Lucina')           #Lucina Command: #24
 async def Lucina(context):
     Lucina = discord.Embed(title = "Fire Emblem Awakening (2012)", type = "rich", description = "Real Marth, Too Safe", color = 0x0152b3)
-    Lucina.set_thumbnail(url="attachment://image.png")
+    Lucina.set_thumbnail(url="https://ssb.wiki.gallery/images/d/dc/Lucina_SSBU.png")
     Lucina.set_author(name = "#24: Lucina", url = "https://open.spotify.com/track/1EV465Il8JJQlwJQQmXCn6?si=dd845cd0c7154354", icon_url = "https://ssb.wiki.gallery/images/d/d8/LucinaHeadSSBUWebsite.png")
     Lucina.add_field(name = "Run Speed", value = "1.964 `[23-24]`", inline=True)
     Lucina.add_field(name = "Air Speed", value = "1.071 `[41-42]`", inline=True)
@@ -380,7 +380,7 @@ async def Lucina(context):
 @client.command(name = 'YoungLink')        #Young Link Command: #25
 async def YoungLink(context):
     YLink = discord.Embed(title = "The Legend of Zelda: Ocarina of Time (1998)", type = "rich", description = "The Most Annoying Link", color = 0x00ff4b)
-    YLink.set_thumbnail(url="attachment://image.png")
+    YLink.set_thumbnail(url="https://ssb.wiki.gallery/images/8/8a/Young_Link_SSBU.png")
     YLink.set_author(name = "#25: Young Link", url = "https://open.spotify.com/track/4eA9VHcNALbJh4cLcCWHWs?si=a3901eab68d54ee2", icon_url = "https://ssb.wiki.gallery/images/c/c0/YoungLinkHeadSSBUWebsite.png")
     YLink.add_field(name = "Run Speed", value = "1.749 `[41]`", inline=True)
     YLink.add_field(name = "Air Speed", value = "0.966 `[64]`", inline=True)
@@ -394,7 +394,7 @@ async def YoungLink(context):
 @client.command(name = 'Ganondorf')        #Ganondorf Command: #26
 async def Ganondorf(context):
     Ganon = discord.Embed(title = "The Legend of Zelda: Ocarina of Time (1998)", type = "rich", description = "The King of Disrespect", color = 0x5400b8)
-    Ganon.set_thumbnail(url="attachment://image.png")
+    Ganon.set_thumbnail(url="https://ssb.wiki.gallery/images/9/91/Ganondorf_SSBU.png")
     Ganon.set_author(name = "#26: Ganondorf", url = "https://open.spotify.com/track/7kWqgvTLq4pb5nGqtwJREJ?si=ebd635b0f04445e5", icon_url = "https://ssb.wiki.gallery/images/b/b6/GanondorfHeadSSBUWebsite.png")
     Ganon.add_field(name = "Run Speed", value = "1.34 `[84]`", inline=True)
     Ganon.add_field(name = "Air Speed", value = "0.83 `[84-85]`", inline=True)
