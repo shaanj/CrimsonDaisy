@@ -1,6 +1,8 @@
 import discord
 from discord.ext import commands
 import requests
+import os
+
 
 client = commands.Bot(command_prefix='&', help_command=None, case_insensitive = True)
 
@@ -412,4 +414,4 @@ async def Ganondorf(context):
 
 
 
-client.run('ODE4MzM4NDYxNjQyNzg0NzY4.YEWnFQ.rOkL3TSSF9EDQpL7zsNUc035nj8')
+client.run(os.environ['DISCORD_TOKEN'])
