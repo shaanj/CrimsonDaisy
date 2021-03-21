@@ -32,20 +32,27 @@ async def help(context):
     CrimsonDaisy.set_author(name = "Crimson Daisy", icon_url = "https://ssb.wiki.gallery/images/2/2d/DaisyHeadSSBUWebsite.png")
     CrimsonDaisy.add_field(name = "&smash <OPTIONAL @USER>", value = "Smash that mf", inline = False)
     CrimsonDaisy.add_field(name = "&<Smash Character (Daisy)>", value = "Smash Data (Absolute Scale and Ranks)", inline = False)
-    CrimsonDaisy.set_footer(text = "For 2nd command, [X] = Rank out of 87.\n[X-Y] = More than 1 character has this rank.")
+    CrimsonDaisy.set_footer(text = "[X] = Rank out of 87.\n[X-Y] = More than 1 character has this rank.")
     await context.message.channel.send(embed = CrimsonDaisy)
 
 @client.event
 async def on_message(message):
     if message.author == client.user: return
 
-    if "hello" in message.content:
+    if "hello" in message.content and "&" not in message.content:
         await message.channel.send("Hello! " + message.author.mention)
 
     if "smash" in message.content and "&" not in message.content:
         await message.channel.send("I'll smash your dad")
 
     await client.process_commands(message)
+
+
+@client.event
+async def on_command_error(context, error):
+    if isinstance(error, commands.CommandNotFound):
+        await context.send("bruh you mf stupid, god damn")
+
 
 @client.command(name = 'smash')
 async def smash(context, user : discord.User = None):
@@ -468,7 +475,7 @@ async def Chrom(context):
 
 @client.command(name = 'GnW')        #Mr. Game & Watch Command: #30 
 async def GnW(context):
-    GnW = discord.Embed(title = "Ball (1980)", type = "rich", description = "Google Chrome", color = 0x507bcb)
+    GnW = discord.Embed(title = "Ball (1980)", type = "rich", description = "Google Chrome", color = 0x000000)
     GnW.set_thumbnail(url = "https://ssb.wiki.gallery/images/c/cb/Mr._Game_%26_Watch_SSBU.png")
     GnW.set_author(name = "#30: Mr. Game & Watch", url = "https://open.spotify.com/track/5MkWm3BoOIe4rXXQenM8Kw?si=9f821866898e4119", icon_url = "https://ssb.wiki.gallery/images/1/15/MrGame%26WatchHeadSSBUWebsite.png")
     GnW.add_field(name = "Run Speed", value = "1.679 `[47]`", inline = True)
@@ -477,6 +484,87 @@ async def GnW(context):
     GnW.add_field(name = "Weight", value = "75 `[84-85]`", inline = True)
     GnW.add_field(name = "Weightclass", value = "`Featherweight`", inline = True)
     await context.message.channel.send(embed = GnW)
+
+
+@client.command(name = 'MetaKnight')        #Meta Knight Command: #31 
+async def MetaKnight(context):
+    Meta = discord.Embed(title = "Kirby's Adventure (1993)", type = "rich", description = "Every Special Is A Recovery", color = 0x5f3ed4)
+    Meta.set_thumbnail(url = "https://ssb.wiki.gallery/images/0/00/Meta_Knight_SSBU.png")
+    Meta.set_author(name = "#31: Meta Knight", url = "https://open.spotify.com/track/1ROnBLZnitJpZOnzD4wiAe?si=0d881b7da2104d49", icon_url = "https://ssb.wiki.gallery/images/3/3d/MetaKnightHeadSSBUWebsite.png")
+    Meta.add_field(name = "Run Speed", value = "2.09 `[16]`", inline = True)
+    Meta.add_field(name = "Air Speed", value = "1.04 `[47]`", inline = True)
+    Meta.add_field(name = "Fall Speed", value = "1.66 `[31]`", inline = False)
+    Meta.add_field(name = "Weight", value = "80 `[75-76]`", inline = True)
+    Meta.add_field(name = "Weightclass", value = "`Featherweight`", inline = True)
+    await context.message.channel.send(embed = Meta)
+
+
+@client.command(name = 'Pit')              #Pit Command: #32 
+async def Pit(context):
+    Pit = discord.Embed(title = "Kid Icarus (1986)", type = "rich", description = "Can't Read", color = 0xdcd6ef)
+    Pit.set_thumbnail(url = "https://ssb.wiki.gallery/images/3/38/Pit_SSBU.png")
+    Pit.set_author(name = "#32: Pit", url = "https://open.spotify.com/track/7HIb4JqJTon9MH8CcEBYE1?si=f410a2607d9a446c", icon_url = "https://ssb.wiki.gallery/images/d/d7/PitHeadSSBUWebsite.png")
+    Pit.add_field(name = "Run Speed", value = "1.828 `[32-33]`", inline = True)
+    Pit.add_field(name = "Air Speed", value = "0.935 `[71-72]`", inline = True)
+    Pit.add_field(name = "Fall Speed", value = "1.48 `[61-63]`", inline = False)
+    Pit.add_field(name = "Weight", value = "96 `[39-42]`", inline = True)
+    Pit.add_field(name = "Weightclass", value = "`Middleweight`", inline = True)
+    Pit.set_footer(text = "Exact same stats and ranks as Dark Pit \nDifferences: Arrows(Less Damage & Can Be Curved) and Side B(Launches Upwards)")
+    await context.message.channel.send(embed = Pit)
+
+
+@client.command(name = 'DarkPit')          #Dark Pit Command: #33 
+async def DarkPit(context):
+    DPit = discord.Embed(title = "Kid Icarus (1986)", type = "rich", description = "Can't Read", color = 0xdcd6ef)
+    DPit.set_thumbnail(url = "https://ssb.wiki.gallery/images/0/09/Dark_Pit_SSBU.png")
+    DPit.set_author(name = "#33: Dark Pit", url = "https://open.spotify.com/track/1Nv8YeKrXdR7max6eeZ3SC?si=0b339fa96e8c4e0a", icon_url = "https://ssb.wiki.gallery/images/8/8b/DarkPitHeadSSBUWebsite.png")
+    DPit.add_field(name = "Run Speed", value = "1.828 `[32-33]`", inline = True)
+    DPit.add_field(name = "Air Speed", value = "0.935 `[71-72]`", inline = True)
+    DPit.add_field(name = "Fall Speed", value = "1.48 `[61-63]`", inline = False)
+    DPit.add_field(name = "Weight", value = "96 `[39-42]`", inline = True)
+    DPit.add_field(name = "Weightclass", value = "`Middleweight`", inline = True)
+    DPit.set_footer(text = "Exact same stats and ranks as Pit \nDifferences: Arrows(More Damage & Can't Be Curved) and Side B(Launches Horizontally)")
+    await context.message.channel.send(embed = DPit)
+
+
+@client.command(name = 'ZSS')          #Zero Suit Samus Command: #34 
+async def ZSS(context):
+    ZSS = discord.Embed(title = "Metroid: Zero Mission (2004)", type = "rich", description = "Cammy In Disguise", color = 0x1699ef)
+    ZSS.set_thumbnail(url = "https://ssb.wiki.gallery/images/f/f0/Zero_Suit_Samus_SSBU.png")
+    ZSS.set_author(name = "#34: Zero Suit Samus", url = "https://open.spotify.com/track/0SXJaYvoMCidaNUAnoAv1K?si=1f2a9553b7e242dc", icon_url = "https://ssb.wiki.gallery/images/5/5a/ZeroSuitSamusHeadSSBUWebsite.png")
+    ZSS.add_field(name = "Run Speed", value = "2.31 `[7]`", inline = True)
+    ZSS.add_field(name = "Air Speed", value = "1.26 `[9]`", inline = True)
+    ZSS.add_field(name = "Fall Speed", value = "1.7 `[27-28]`", inline = False)
+    ZSS.add_field(name = "Weight", value = "80 `[75-76]`", inline = True)
+    ZSS.add_field(name = "Weightclass", value = "`Featherweight`", inline = True)
+    ZSS.set_footer(text = "Can: Wall Jump, Tether Recovery")
+    await context.message.channel.send(embed = ZSS)
+
+
+@client.command(name = 'Wario')          #Wario Command: #35 
+async def Wario(context):
+    Wario = discord.Embed(title = "Super Mario Land 2: 6 Golden Coins (1992)", type = "rich", description = "Degen Reddit Mod", color = 0xdfd31f)
+    Wario.set_thumbnail(url = "https://ssb.wiki.gallery/images/0/04/Wario_SSBU.png")
+    Wario.set_author(name = "#35: Wario", url = "https://open.spotify.com/track/1VeBDwRuEqDNBORurkmzYs?si=4e33b071358e44cd", icon_url = "https://ssb.wiki.gallery/images/7/7f/WarioHeadSSBUWebsite.png")
+    Wario.add_field(name = "Run Speed", value = "1.65 `[52-54]`", inline = True)
+    Wario.add_field(name = "Air Speed", value = "1.271 `[8]`", inline = True)
+    Wario.add_field(name = "Fall Speed", value = "1.61 `[41]`", inline = False)
+    Wario.add_field(name = "Weight", value = "107 `[13-17]`", inline = True)
+    Wario.add_field(name = "Weightclass", value = "`Heavyweight`", inline = True)
+    await context.message.channel.send(embed = Wario)
+
+
+@client.command(name = 'Snake')          #Snake Command: #36 
+async def Snake(context):
+    Snake = discord.Embed(title = "Metal Gear (1987)", type = "rich", description = "Manliest Character In The Game" , color = 0x597c8c)
+    Snake.set_thumbnail(url = "https://ssb.wiki.gallery/images/0/02/Snake_SSBU.png")
+    Snake.set_author(name = "#36: Snake", url = "https://open.spotify.com/track/6LD1Xsy4pZcljgjdqwJQTT?si=a5b5b3a1445244b5", icon_url = "https://ssb.wiki.gallery/images/9/9f/SnakeHeadSSBUWebsite.png")
+    Snake.add_field(name = "Run Speed", value = "1.595 `[60-64]`", inline = True)
+    Snake.add_field(name = "Air Speed", value = "0.987 `[61-62]`", inline = True)
+    Snake.add_field(name = "Fall Speed", value = "1.73 `[26]`", inline = False)
+    Snake.add_field(name = "Weight", value = "106 `[18-20]`", inline = True)
+    Snake.add_field(name = "Weightclass", value = "`Heavyweight`", inline = True)
+    await context.message.channel.send(embed = Snake)
 
 
 client.run(token)
