@@ -2,8 +2,21 @@ import discord
 from discord.ext import commands
 import requests
 import os
+import json
 
 client = commands.Bot(command_prefix='&', help_command=None, case_insensitive = True)
+
+if os.path.exists(os.getcwd() + "/config.json"):
+    with open("./config.json") as f:
+        configData = json.load(f)
+
+else:
+    configTemplate = {"Token": ""}
+
+    with open(os.getcwd() + "/config.json", "w+") as f:
+        json.dump(configTemplate,f)
+
+token = configData["Token"]
 
 @client.event
 async def on_ready():
@@ -409,4 +422,4 @@ async def Ganondorf(context):
 
 
 
-client.run(os.environ["Token"])
+client.run(token)
