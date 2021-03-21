@@ -409,8 +409,4 @@ async def Ganondorf(context):
 
 
 
-
-
-
-
-client.run(os.environ['DISCORD_TOKEN'])
+client.run(os.environ["Token"])
