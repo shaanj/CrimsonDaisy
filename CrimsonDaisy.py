@@ -452,4 +452,31 @@ async def Roy(context):
     await context.message.channel.send(embed = Roy)
 
 
+@client.command(name = 'Chrom')        #Chrom Command: #29 
+async def Chrom(context):
+    Chrom = discord.Embed(title = "Fire Emblem Awawkening (2012)", type = "rich", description = "Google Chrome", color = 0x507bcb)
+    Chrom.set_thumbnail(url = "https://ssb.wiki.gallery/images/5/57/Chrom_SSBU.png")
+    Chrom.set_author(name = "#29: Chrom", url = "https://open.spotify.com/track/7GUdZH0lYiOlfBsWrhMwHp?si=d99653e97e9d4df5", icon_url = "https://ssb.wiki.gallery/images/7/70/ChromHeadSSBUWebsite.png")
+    Chrom.add_field(name = "Run Speed", value = "2.145 `[14-15]`", inline = True)
+    Chrom.add_field(name = "Air Speed", value = "1.302 `[4-5]`", inline = True)
+    Chrom.add_field(name = "Fall Speed", value = "1.8 `[13-18]`", inline = False)
+    Chrom.add_field(name = "Weight", value = "95 `[43-46]`", inline = True)
+    Chrom.add_field(name = "Weightclass", value = "`Middleweight`", inline = True)
+    Chrom.set_footer(text = "Exact same stats and ranks as Roy \nOnly difference: All parts of the sword are strong")
+    await context.message.channel.send(embed = Chrom)
+
+
+@client.command(name = 'GnW')        #Mr. Game & Watch Command: #30 
+async def GnW(context):
+    GnW = discord.Embed(title = "Ball (1980)", type = "rich", description = "Google Chrome", color = 0x507bcb)
+    GnW.set_thumbnail(url = "https://ssb.wiki.gallery/images/c/cb/Mr._Game_%26_Watch_SSBU.png")
+    GnW.set_author(name = "#30: Mr. Game & Watch", url = "https://open.spotify.com/track/5MkWm3BoOIe4rXXQenM8Kw?si=9f821866898e4119", icon_url = "https://ssb.wiki.gallery/images/1/15/MrGame%26WatchHeadSSBUWebsite.png")
+    GnW.add_field(name = "Run Speed", value = "1.679 `[47]`", inline = True)
+    GnW.add_field(name = "Air Speed", value = "1.176 `[18]`", inline = True)
+    GnW.add_field(name = "Fall Speed", value = "1.24 `[82]`", inline = False)
+    GnW.add_field(name = "Weight", value = "75 `[84-85]`", inline = True)
+    GnW.add_field(name = "Weightclass", value = "`Featherweight`", inline = True)
+    await context.message.channel.send(embed = GnW)
+
+
 client.run(token)
