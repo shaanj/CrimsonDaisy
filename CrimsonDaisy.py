@@ -67,7 +67,6 @@ async def smash(context, user : discord.User = None):
     else:
         await context.send("I'm gonna smash " + user.mention)
 
-
                                         
 @client.command(name = 'Mario')            #Mario Command: #1       FIRST ROW STARTS HERE
 async def Mario(context):
@@ -658,6 +657,170 @@ async def Lucas(context):
     Lucas.add_field(name = Weightclass, value = "`Middleweight`", inline = True)
     Lucas.set_footer(text = "Can: Tether Recovery")
     await context.message.channel.send(embed = Lucas)
+
+
+@client.command(name = 'Sonic')            #Sonic Command: #43      
+async def Sonic(context):
+    Sonic = discord.Embed(title = "Sonic The Hedgehog (1991)", type = "rich", description = "Sonic '06 Speaks For Itself" , color = 0x006dff)
+    Sonic.set_thumbnail(url = "https://ssb.wiki.gallery/images/b/ba/Sonic_SSBU.png")
+    Sonic.set_author(name = "#43: Sonic", url = "https://open.spotify.com/track/4BRWDjTnycZMZMkKV6jbSY?si=19ed93cedfa04d85", icon_url = "https://ssb.wiki.gallery/images/b/b7/SonicHeadSSBUWebsite.png")
+    Sonic.add_field(name = RunSpd, value = "3.85 `[1]`", inline = True)
+    Sonic.add_field(name = AirSpd, value = "1.208 `[13-17]`", inline = True)
+    Sonic.add_field(name = FallSpd, value = "1.65 `[32-37]`", inline = False)
+    Sonic.add_field(name = Weight, value = "86 `[69-70]`", inline = True)
+    Sonic.add_field(name = Weightclass, value = "`Lightweight`", inline = True)
+    Sonic.set_footer(text = "Can: Wall Jump \nFastest run speed in the game")
+    await context.message.channel.send(embed = Sonic)
+
+
+@client.command(name = 'DDD')              #King Dedede Command: #44      
+async def DDD(context):
+    DDD = discord.Embed(title = "Kirby's Dreamland (1992)", type = "rich", description = "Crouch Is A Meme" , color = 0xffc600)
+    DDD.set_thumbnail(url = "https://ssb.wiki.gallery/images/f/f5/King_Dedede_SSBU.png")
+    DDD.set_author(name = "#44: King Dedede", url = "https://open.spotify.com/track/2BCkI5vkyvOdfYcLKIlfyr?si=b3abcb69279d4533", icon_url = "https://ssb.wiki.gallery/images/f/fe/KingDededeHeadSSBUWebsite.png")
+    DDD.add_field(name = RunSpd, value = "1.496 `[74]`", inline = True)
+    DDD.add_field(name = AirSpd, value = "0.735 `[87]`", inline = True)
+    DDD.add_field(name = FallSpd, value = "1.95 `[2-4]`", inline = False)
+    DDD.add_field(name = Weight, value = "127 `[3-4]`", inline = True)
+    DDD.add_field(name = Weightclass, value = "`Super Heavyweight`", inline = True)
+    DDD.set_footer(text = "Slowest air speed in the game")
+    await context.message.channel.send(embed = DDD)
+
+
+@client.command(name = 'Olimar')           #Olimar Command: #45      
+async def Olimar(context):
+    Olimar = discord.Embed(title = "Pikmin (2001)", type = "rich", description = "Too Many Disjoints" , color = 0xbcc570)
+    Olimar.set_thumbnail(url = "https://ssb.wiki.gallery/images/b/b3/Olimar_SSBU.png")
+    Olimar.set_author(name = "#45: Olimar", url = "https://open.spotify.com/track/1fedeOT7omu0QGz6Hr6CqE?si=43519620387543f4", icon_url = "https://ssb.wiki.gallery/images/9/97/OlimarHeadSSBUWebsite.png")
+    Olimar.add_field(name = RunSpd, value = "1.617 `[56]`", inline = True)
+    Olimar.add_field(name = AirSpd, value = "0.861 `[80]`", inline = True)
+    Olimar.add_field(name = FallSpd, value = "1.35 `[69-72]`", inline = False)
+    Olimar.add_field(name = Weight, value = "79 `[77-81]`", inline = True)
+    Olimar.add_field(name = Weightclass, value = "`Featherweight`", inline = True)
+    await context.message.channel.send(embed = Olimar)
+
+
+@client.command(name = 'Lucario')          #Lucario Command: #46      
+async def Lucario(context):
+    Lucario = discord.Embed(title = "Pokemon Diamond and Pearl (2006)", type = "rich", description = "Sinnoh Best Region" , color = 0x3a5786)
+    Lucario.set_thumbnail(url = "https://ssb.wiki.gallery/images/0/08/Lucario_SSBU.png")
+    Lucario.set_author(name = "#46: Lucario", url = "https://open.spotify.com/track/02NdDkU7wD1pjoy5u9kT7X?si=a748371951454986", icon_url = "https://ssb.wiki.gallery/images/2/20/LucarioHeadSSBUWebsite.png")
+    Lucario.add_field(name = RunSpd, value = "1.705 `[46]`", inline = True)
+    Lucario.add_field(name = AirSpd, value = "1.281 `[6-7]`", inline = True)
+    Lucario.add_field(name = FallSpd, value = "1.68 `[29-30]`", inline = False)
+    Lucario.add_field(name = Weight, value = "92 `[52-57]`", inline = True)
+    Lucario.add_field(name = Weightclass, value = "`Middleweight`", inline = True)
+    Lucario.set_footer(text = "Can: Wall Jump, Wall Cling")
+    await context.message.channel.send(embed = Lucario)
+
+
+@client.command(name = 'Rob')              #ROB Command: #47      
+async def Rob(context):
+    Rob = discord.Embed(title = "Stack-Up (1985)", type = "rich", description = "Not Even A Character" , color = 0x94a5c1)
+    Rob.set_thumbnail(url = "https://ssb.wiki.gallery/images/6/60/R.O.B._SSBU.png")
+    Rob.set_author(name = "#47: R.O.B", url = "https://open.spotify.com/track/3iTHPIRqTgXgjUrfXIYIn1?si=1c3a56fa8b9f4fca", icon_url = "https://ssb.wiki.gallery/images/b/be/ROBHeadSSBUWebsite.png")
+    Rob.add_field(name = RunSpd, value = "1.725 `[43]`", inline = True)
+    Rob.add_field(name = AirSpd, value = "1.134 `[27-29]`", inline = True)
+    Rob.add_field(name = FallSpd, value = "1.6 `[42-46]`", inline = False)
+    Rob.add_field(name = Weight, value = "106 `[18-20]`", inline = True)
+    Rob.add_field(name = Weightclass, value = "`Heavyweight`", inline = True)
+    await context.message.channel.send(embed = Rob)
+
+
+@client.command(name = 'ToonLink')         #Toon Link Command: #48      
+async def toonlink(context):
+    tlink = discord.Embed(title = "The Legend of Zelda: Four Swords (2002)", type = "rich", description = "The Worst Link" , color = 0x0fed6c)
+    tlink.set_thumbnail(url = "https://ssb.wiki.gallery/images/5/56/Toon_Link_SSBU.png")
+    tlink.set_author(name = "#48: Toon Link", url = "https://open.spotify.com/track/565IoIuSM389HhAp8U69qf?si=0ac09e60d01e480c", icon_url = "https://ssb.wiki.gallery/images/b/bf/ToonLinkHeadSSBUWebsite.png")
+    tlink.add_field(name = RunSpd, value = "1.906 `[27]`", inline = True)
+    tlink.add_field(name = AirSpd, value = "1.05 `[43-46]`", inline = True)
+    tlink.add_field(name = FallSpd, value = "1.38 `[66-67]`", inline = False)
+    tlink.add_field(name = Weight, value = "91 `[58-59]`", inline = True)
+    tlink.add_field(name = Weightclass, value = "`Middleweight`", inline = True)
+    tlink.set_footer(text = "Can: Wall Jump, Tether Recovery")
+    await context.message.channel.send(embed = tlink)
+
+
+@client.command(name = 'Wolf')             #Wolf Command: #49      
+async def Wolf(context):
+    Wolf = discord.Embed(title = "Star Fox 64 (1997)", type = "rich", description = "Blaster Spam Is Cursed" , color = 0x7b1abd)
+    Wolf.set_thumbnail(url = "https://ssb.wiki.gallery/images/8/8a/Wolf_SSBU.png")
+    Wolf.set_author(name = "#49: Wolf", url = "https://open.spotify.com/track/24Hub6h8LGBfn0mcPFn2wx?si=db92a6f9fc5c4df6", icon_url = "https://ssb.wiki.gallery/images/0/06/WolfHeadSSBUWebsite.png")
+    Wolf.add_field(name = RunSpd, value = "1.54 `[68]`", inline = True)
+    Wolf.add_field(name = AirSpd, value = "1.281 `[6-7]`", inline = True)
+    Wolf.add_field(name = FallSpd, value = "1.8 `[13-18]`", inline = False)
+    Wolf.add_field(name = Weight, value = "92 `[52-57]`", inline = True)
+    Wolf.add_field(name = Weightclass, value = "`Middleweight`", inline = True)
+    Wolf.set_footer(text = "Can: Wall Jump")
+    await context.message.channel.send(embed = Wolf)
+
+
+@client.command(name = 'Villager')         #Villager Command: #50      
+async def Villager(context):
+    Vill = discord.Embed(title = "Doubutsu no Mori (2001)", type = "rich", description = "That's A Murder Face" , color = 0xd05757)
+    Vill.set_thumbnail(url = "https://ssb.wiki.gallery/images/a/ac/Villager_SSBU.png")
+    Vill.set_author(name = "#50: Villager", url = "https://open.spotify.com/track/5fegEkQy2FKJfqOKTrnTLW?si=3977e37231264665", icon_url = "https://ssb.wiki.gallery/images/f/f9/VillagerHeadSSBUWebsite.png")
+    Vill.add_field(name = RunSpd, value = "1.397 `[81]`", inline = True)
+    Vill.add_field(name = AirSpd, value = "0.987 `[61-62]`", inline = True)
+    Vill.add_field(name = FallSpd, value = "1.32 `[75-76]`", inline = False)
+    Vill.add_field(name = Weight, value = "92 `[52-57]`", inline = True)
+    Vill.add_field(name = Weightclass, value = "`Middleweight`", inline = True)
+    Vill.set_footer(text = "Can: Wall Jump")
+    await context.message.channel.send(embed = Vill)
+
+
+@client.command(name = 'Megaman')         #Megaman Command: #51      
+async def Megaman(context):
+    Mega = discord.Embed(title = "Mega Man (1987)", type = "rich", description = "Dead Franchise" , color = 0x00a7ff)
+    Mega.set_thumbnail(url = "https://ssb.wiki.gallery/images/4/46/Mega_Man_SSBU.png")
+    Mega.set_author(name = "#51: Megaman", url = "https://open.spotify.com/track/6iKu0q1ix7YogUSe4oNN30?si=d8a469a572a948a0", icon_url = "https://ssb.wiki.gallery/images/2/26/MegaManHeadSSBUWebsite.png")
+    Mega.add_field(name = RunSpd, value = "1.602 `[58]`", inline = True)
+    Mega.add_field(name = AirSpd, value = "1.155 `[20-25]`", inline = True)
+    Mega.add_field(name = FallSpd, value = "1.8 `[13-18]`", inline = False)
+    Mega.add_field(name = Weight, value = "102 `[28]`", inline = True)
+    Mega.add_field(name = Weightclass, value = "`Heavyweight`", inline = True)
+    Mega.set_footer(text = "Can: Wall Jump")
+    await context.message.channel.send(embed = Mega)
+
+
+@client.command(name = 'WiiFit')           #Wii Fit Trainer Command: #52      
+async def WiiFit(context):
+    Wii = discord.Embed(title = "Wii Fit (2007)", type = "rich", description = "Meme Character" , color = 0x00a7ff)
+    Wii.set_thumbnail(url = "https://ssb.wiki.gallery/images/f/ff/Wii_Fit_Trainer_SSBU.png")
+    Wii.set_author(name = "#52: Wii Fit Trainer", url = "https://open.spotify.com/track/4GLcSCuaUEZ9NmuROdIl9d?si=b02bf8735bdd4b62", icon_url = "https://ssb.wiki.gallery/images/f/fc/WiiFitTrainerHeadSSBUWebsite.png")
+    Wii.add_field(name = RunSpd, value = "1.866 `[30]`", inline = True)
+    Wii.add_field(name = AirSpd, value = "1.019 `[52-54]`", inline = True)
+    Wii.add_field(name = FallSpd, value = "1.3 `[78-80]`", inline = False)
+    Wii.add_field(name = Weight, value = "96 `[39-42]`", inline = True)
+    Wii.add_field(name = Weightclass, value = "`Middleweight`", inline = True)
+    Wii.set_footer(text = "Can: Wall Jump")
+    await context.message.channel.send(embed = Wii)
+
+
+@client.command(name = 'Rosa')             #Rosalina & Luma Command: #53      
+async def Rosa(context):
+    Rosa = discord.Embed(title = "Super Mario Galaxy (2007)", type = "rich", description = "Luma's Cracked" , color = 0x00a7ff)
+    Rosa.set_thumbnail(url = "https://ssb.wiki.gallery/images/1/16/Rosalina_%26_Luma_SSBU.png")
+    Rosa.set_author(name = "#53: Rosalina & Luma", url = "https://open.spotify.com/track/7ptzEZfGLMLUhhgfw5ZsoT?si=952d593d22654cc2", icon_url = "https://ssb.wiki.gallery/images/6/63/RosalinaHeadSSBUWebsite.png")
+    Rosa.add_field(name = RunSpd, value = "1.795 `[35]`", inline = True)
+    Rosa.add_field(name = AirSpd, value = "1.05 `[43-46]`", inline = True)
+    Rosa.add_field(name = FallSpd, value = "1.2 `[84]`", inline = False)
+    Rosa.add_field(name = Weight, value = "82 `[72-73]`", inline = True)
+    Rosa.add_field(name = Weightclass, value = "`Featherweight`", inline = True)
+    await context.message.channel.send(embed = Rosa)
+
+
+@client.command(name = 'LittleMac')        #Little Mac Command: #54      
+async def LittleMac(context):
+    Mac = discord.Embed(title = "Punch-Out!! (1987)", type = "rich", description = "Air Game 10/10" , color = 0x2aa96e)
+    Mac.set_thumbnail(url = "https://ssb.wiki.gallery/images/5/53/Little_Mac_SSBU.png")
+    Mac.set_author(name = "#54: Little Mac", url = "https://open.spotify.com/track/0FR1i0jsRol6lNDsI8wYbd?si=b9bd22989b1d4c6e", icon_url = "https://ssb.wiki.gallery/images/8/87/LittleMacHeadSSBUWebsite.png")
+    Mac.add_field(name = RunSpd, value = "2.464 `[3]`", inline = True)
+    Mac.add_field(name = AirSpd, value = "1.208 `[13-17]`", inline = True)
+    Mac.add_field(name = FallSpd, value = "1.95 `[2-4]`", inline = False)
+    Mac.add_field(name = Weight, value = "87 `[68]`", inline = True)
+    Mac.add_field(name = Weightclass, value = "`Lightweight`", inline = True)
+    await context.message.channel.send(embed = Mac)
 
 
 client.run(token)
