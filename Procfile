@@ -1,1 +1,1 @@
-worker: python CrimsonDaisy.py
+worker: python CrimsonDaisy/CrimsonDaisy.py
