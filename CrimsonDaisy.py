@@ -574,7 +574,7 @@ async def Snake(context):
 @client.command(name = 'Ike')              #Ike Command: #37 
 async def Ike(context):
     Ike = discord.Embed(title = "Fire Emblem: Path of Radiance (2005)", type = "rich", description = "He Fights For His Friends" , color = 0xd8512e)
-    Ike.set_thumbnail(url = "https://ssb.wiki.gallery/images/8/86/Ike_SSBU.png")
+    Ike.set_thumbnail(url = "https://ssb.wiki.gallery/images/e/ee/Ike-Alt1_SSBU.png")
     Ike.set_author(name = "#37: Ike", url = "https://open.spotify.com/track/0RbeHcWAC742U1RVH66B93?si=a0f594946d2c4a75", icon_url = "https://ssb.wiki.gallery/images/2/25/IkeHeadSSBUWebsite.png")
     Ike.add_field(name = RunSpd, value = "1.507 `[73]`", inline = True)
     Ike.add_field(name = AirSpd, value = "1.134 `[27-29]`", inline = True)
