@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 import os
-import json
+from dotenv import load_dotenv
 
 client = commands.Bot(command_prefix='&', help_command=None, case_insensitive = True)
 
@@ -11,17 +11,9 @@ FallSpd = "Fall Speed"
 Weight = "Weight"
 Weightclass = "Weightclass"
 
-if os.path.exists(os.getcwd() + "/config.json"):
-    with open("./config.json") as f:
-        configData = json.load(f)
+load_dotenv()
+TOKEN = os.getenv("DISCORD_TOKEN")
 
-else:
-    configTemplate = {"Token": ""}
-
-    with open(os.getcwd() + "/config.json", "w+") as f:
-        json.dump(configTemplate,f)
-
-token = configData["Token"]
 
 @client.event
 async def on_ready():
@@ -822,4 +814,4 @@ async def LittleMac(context):
     await context.message.channel.send(embed = Mac)
 
 
-client.run(token)
+client.run(TOKEN)
