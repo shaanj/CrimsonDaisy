@@ -814,4 +814,24 @@ async def LittleMac(context):
     await context.message.channel.send(embed = Mac)
 
 
+
+
+
+
+
+@client.command(name = 'Greninja')        #Greninja Command: #55      
+async def Greninja(context):
+    Greninja = discord.Embed(title = "Pokemon X and Y (2013)", type = "rich", description = "I've Met Elu Tran" , color = 0x089ffd)
+    Greninja.set_thumbnail(url = "https://ssb.wiki.gallery/images/d/da/Greninja_SSBU.png")
+    Greninja.set_author(name = "#55: Greninja", url = "https://open.spotify.com/track/3RZL40u2LHNb0uOAVUV0R9?si=d239ab2bf0004d64", icon_url = "https://ssb.wiki.gallery/images/7/79/GreninjaHeadSSBUWebsite.png")
+    Greninja.add_field(name = RunSpd, value = "2.288 `[8]`", inline = True)
+    Greninja.add_field(name = AirSpd, value = "1.239 `[10]`", inline = True)
+    Greninja.add_field(name = FallSpd, value = "1.85 `[9-11]`", inline = False)
+    Greninja.add_field(name = Weight, value = "88 `[65-67]`", inline = True)
+    Greninja.add_field(name = Weightclass, value = "`Lightweight`", inline = True)
+    await context.message.channel.send(embed = Greninja)
+
+
+
+
 client.run(TOKEN)
