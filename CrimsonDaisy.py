@@ -860,5 +860,16 @@ async def Pacman(context):
     await context.message.channel.send(embed = Pacman)
 
 
+@client.command(name = 'Robin')            #Robin Command: #58    
+async def Robin(context):
+    Robin = discord.Embed(title = "Fire Emblem Awakening (2012)", type = "rich", description = "Tomes, How Original" , color = 0x928f19)
+    Robin.set_thumbnail(url = "https://ssb.wiki.gallery/images/8/82/Robin_SSBU.png")
+    Robin.set_author(name = "#58: Robin", url = "https://open.spotify.com/track/699CaeyBkVTO87psMq3Yzw?si=91fb5d1a20bd4c9c", icon_url = "https://ssb.wiki.gallery/images/4/43/RobinHeadSSBUWebsite.png")
+    Robin.add_field(name = RunSpd, value = "1.265 `[86]`", inline = True)
+    Robin.add_field(name = AirSpd, value = "1.05 `[43-46]`", inline = True)
+    Robin.add_field(name = FallSpd, value = "1.5 `[57-60]`", inline = False)
+    Robin.add_field(name = Weight, value = "95 `[43-46]`", inline = True)
+    Robin.add_field(name = Weightclass, value = "`Middleweight`", inline = True)
+    await context.message.channel.send(embed = Robin)
 
 client.run(TOKEN)
