@@ -819,7 +819,7 @@ async def LittleMac(context):
 
 
 
-@client.command(name = 'Greninja')        #Greninja Command: #55      
+@client.command(name = 'Greninja')         #Greninja Command: #55      
 async def Greninja(context):
     Greninja = discord.Embed(title = "Pokemon X and Y (2013)", type = "rich", description = "I've Met Elu Tran" , color = 0x089ffd)
     Greninja.set_thumbnail(url = "https://ssb.wiki.gallery/images/d/da/Greninja_SSBU.png")
@@ -829,8 +829,35 @@ async def Greninja(context):
     Greninja.add_field(name = FallSpd, value = "1.85 `[9-11]`", inline = False)
     Greninja.add_field(name = Weight, value = "88 `[65-67]`", inline = True)
     Greninja.add_field(name = Weightclass, value = "`Lightweight`", inline = True)
+    Greninja.set_footer(text = "Can: Wall Jump, Wall Cling")
     await context.message.channel.send(embed = Greninja)
 
+
+@client.command(name = 'Palutena')         #Palutena Command: #56     
+async def Palutena(context):
+    Palutena = discord.Embed(title = "Kid Icarus (1986)", type = "rich", description = "Nairplane" , color = 0x81e0b1)
+    Palutena.set_thumbnail(url = "https://ssb.wiki.gallery/images/6/6b/Palutena_SSBU.png")
+    Palutena.set_author(name = "#56: Palutena", url = "https://open.spotify.com/track/2bJ0c1U8JiLyd7HcURB4oY?si=55f5826738974190", icon_url = "https://ssb.wiki.gallery/images/d/d7/PalutenaHeadSSBUWebsite.png")
+    Palutena.add_field(name = RunSpd, value = "2.077 `[17]`", inline = True)
+    Palutena.add_field(name = AirSpd, value = "1 `[58-59]`", inline = True)
+    Palutena.add_field(name = FallSpd, value = "1.55 `[52-55]`", inline = False)
+    Palutena.add_field(name = Weight, value = "91 `[58-59]`", inline = True)
+    Palutena.add_field(name = Weightclass, value = "`Middleweight`", inline = True)
+    await context.message.channel.send(embed = Palutena)
+
+
+@client.command(name = 'Pacman')         #Pac-Man Command: #57     
+async def Pacman(context):
+    Pacman = discord.Embed(title = "Pac-Man (1980)", type = "rich", description = "Unpredictable Cheese" , color = 0xf8ff00)
+    Pacman.set_thumbnail(url = "https://ssb.wiki.gallery/images/0/03/Pac-Man_SSBU.png")
+    Pacman.set_author(name = "#57: Pac-Man", url = "https://open.spotify.com/track/5Jt6qtZfj0YSHfFBJUyviK?si=f343a0f5780647f2", icon_url = "https://ssb.wiki.gallery/images/3/3d/Pac-ManHeadSSBUWebsite.png")
+    Pacman.add_field(name = RunSpd, value = "1.672 `[48-49]`", inline = True)
+    Pacman.add_field(name = AirSpd, value = "1.092 `[39-40]`", inline = True)
+    Pacman.add_field(name = FallSpd, value = "1.35 `[69-72]`", inline = False)
+    Pacman.add_field(name = Weight, value = "95 `[43-46]`", inline = True)
+    Pacman.add_field(name = Weightclass, value = "`Middleweight`", inline = True)
+    Pacman.set_footer(text = "Can: Wall Jump")
+    await context.message.channel.send(embed = Pacman)
 
 
 
