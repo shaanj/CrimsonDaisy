@@ -872,4 +872,30 @@ async def Robin(context):
     Robin.add_field(name = Weightclass, value = "`Middleweight`", inline = True)
     await context.message.channel.send(embed = Robin)
 
+
+@client.command(name = 'Shulk')            #Shulk Command: #59    
+async def Shulk(context):
+    Shulk = discord.Embed(title = "Xenoblade Chronicles (2010)", type = "rich", description = "Shirtless Only" , color = 0xff4700)
+    Shulk.set_thumbnail(url = "https://ssb.wiki.gallery/images/0/0f/Shulk_SSBU.png")
+    Shulk.set_author(name = "#59: Shulk", url = "https://open.spotify.com/track/428HQh9G3bvjLcv6a2yWDY?si=675eceb833c740f6", icon_url = "https://ssb.wiki.gallery/images/b/bf/ShulkHeadSSBUWebsite.png")
+    Shulk.add_field(name = RunSpd, value = "1.672 `[48-49]`", inline = True)
+    Shulk.add_field(name = AirSpd, value = "1.113 `[32]`", inline = True)
+    Shulk.add_field(name = FallSpd, value = "1.58 `[47-50]`", inline = False)
+    Shulk.add_field(name = Weight, value = "97 `[36-38]`", inline = True)
+    Shulk.add_field(name = Weightclass, value = "`Middleweight`", inline = True)
+    await context.message.channel.send(embed = Shulk)
+
+
+@client.command(name = 'BowserJr')         #Bowser Jr. Command: #60    
+async def BowserJr(context):
+    Jr = discord.Embed(title = "Super Mario Sunshine (2002)", type = "rich", description = "The Real Roy" , color = 0x0fdf8f)
+    Jr.set_thumbnail(url = "https://ssb.wiki.gallery/images/2/2b/Bowser_Jr._SSBU.png")
+    Jr.set_author(name = "#60: Bowser Jr.", url = "https://open.spotify.com/track/6euyBF9W9EvBwoTVM1gS5N?si=ce0be307bb324f08", icon_url = "https://ssb.wiki.gallery/images/3/3e/BowserJrHeadSSBUWebsite.png")
+    Jr.add_field(name = RunSpd, value = "1.566 `[66]`", inline = True)
+    Jr.add_field(name = AirSpd, value = "1.134 `[27-29]`", inline = True)
+    Jr.add_field(name = FallSpd, value = "1.65 `[32-37]`", inline = False)
+    Jr.add_field(name = Weight, value = "108 `[9-12]`", inline = True)
+    Jr.add_field(name = Weightclass, value = "`Heavyweight`", inline = True)
+    await context.message.channel.send(embed = Jr)
+
 client.run(TOKEN)
