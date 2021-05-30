@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 import os
-import json
+from dotenv import load_dotenv
 
 client = commands.Bot(command_prefix='&', help_command=None, case_insensitive = True)
 
@@ -11,17 +11,9 @@ FallSpd = "Fall Speed"
 Weight = "Weight"
 Weightclass = "Weightclass"
 
-if os.path.exists(os.getcwd() + "/config.json"):
-    with open("./config.json") as f:
-        configData = json.load(f)
+load_dotenv()
+TOKEN = os.getenv("DISCORD_TOKEN")
 
-else:
-    configTemplate = {"Token": ""}
-
-    with open(os.getcwd() + "/config.json", "w+") as f:
-        json.dump(configTemplate,f)
-
-token = configData["Token"]
 
 @client.event
 async def on_ready():
@@ -574,7 +566,7 @@ async def Snake(context):
 @client.command(name = 'Ike')              #Ike Command: #37 
 async def Ike(context):
     Ike = discord.Embed(title = "Fire Emblem: Path of Radiance (2005)", type = "rich", description = "He Fights For His Friends" , color = 0xd8512e)
-    Ike.set_thumbnail(url = "https://ssb.wiki.gallery/images/8/86/Ike_SSBU.png")
+    Ike.set_thumbnail(url = "https://ssb.wiki.gallery/images/e/ee/Ike-Alt1_SSBU.png")
     Ike.set_author(name = "#37: Ike", url = "https://open.spotify.com/track/0RbeHcWAC742U1RVH66B93?si=a0f594946d2c4a75", icon_url = "https://ssb.wiki.gallery/images/2/25/IkeHeadSSBUWebsite.png")
     Ike.add_field(name = RunSpd, value = "1.507 `[73]`", inline = True)
     Ike.add_field(name = AirSpd, value = "1.134 `[27-29]`", inline = True)
@@ -822,4 +814,88 @@ async def LittleMac(context):
     await context.message.channel.send(embed = Mac)
 
 
-client.run(token)
+
+
+
+
+
+@client.command(name = 'Greninja')         #Greninja Command: #55      
+async def Greninja(context):
+    Greninja = discord.Embed(title = "Pokemon X and Y (2013)", type = "rich", description = "I've Met Elu Tran" , color = 0x089ffd)
+    Greninja.set_thumbnail(url = "https://ssb.wiki.gallery/images/d/da/Greninja_SSBU.png")
+    Greninja.set_author(name = "#55: Greninja", url = "https://open.spotify.com/track/3RZL40u2LHNb0uOAVUV0R9?si=d239ab2bf0004d64", icon_url = "https://ssb.wiki.gallery/images/7/79/GreninjaHeadSSBUWebsite.png")
+    Greninja.add_field(name = RunSpd, value = "2.288 `[8]`", inline = True)
+    Greninja.add_field(name = AirSpd, value = "1.239 `[10]`", inline = True)
+    Greninja.add_field(name = FallSpd, value = "1.85 `[9-11]`", inline = False)
+    Greninja.add_field(name = Weight, value = "88 `[65-67]`", inline = True)
+    Greninja.add_field(name = Weightclass, value = "`Lightweight`", inline = True)
+    Greninja.set_footer(text = "Can: Wall Jump, Wall Cling")
+    await context.message.channel.send(embed = Greninja)
+
+
+@client.command(name = 'Palutena')         #Palutena Command: #56     
+async def Palutena(context):
+    Palutena = discord.Embed(title = "Kid Icarus (1986)", type = "rich", description = "Nairplane" , color = 0x81e0b1)
+    Palutena.set_thumbnail(url = "https://ssb.wiki.gallery/images/6/6b/Palutena_SSBU.png")
+    Palutena.set_author(name = "#56: Palutena", url = "https://open.spotify.com/track/2bJ0c1U8JiLyd7HcURB4oY?si=55f5826738974190", icon_url = "https://ssb.wiki.gallery/images/d/d7/PalutenaHeadSSBUWebsite.png")
+    Palutena.add_field(name = RunSpd, value = "2.077 `[17]`", inline = True)
+    Palutena.add_field(name = AirSpd, value = "1 `[58-59]`", inline = True)
+    Palutena.add_field(name = FallSpd, value = "1.55 `[52-55]`", inline = False)
+    Palutena.add_field(name = Weight, value = "91 `[58-59]`", inline = True)
+    Palutena.add_field(name = Weightclass, value = "`Middleweight`", inline = True)
+    await context.message.channel.send(embed = Palutena)
+
+
+@client.command(name = 'Pacman')         #Pac-Man Command: #57     
+async def Pacman(context):
+    Pacman = discord.Embed(title = "Pac-Man (1980)", type = "rich", description = "Unpredictable Cheese" , color = 0xf8ff00)
+    Pacman.set_thumbnail(url = "https://ssb.wiki.gallery/images/0/03/Pac-Man_SSBU.png")
+    Pacman.set_author(name = "#57: Pac-Man", url = "https://open.spotify.com/track/5Jt6qtZfj0YSHfFBJUyviK?si=f343a0f5780647f2", icon_url = "https://ssb.wiki.gallery/images/3/3d/Pac-ManHeadSSBUWebsite.png")
+    Pacman.add_field(name = RunSpd, value = "1.672 `[48-49]`", inline = True)
+    Pacman.add_field(name = AirSpd, value = "1.092 `[39-40]`", inline = True)
+    Pacman.add_field(name = FallSpd, value = "1.35 `[69-72]`", inline = False)
+    Pacman.add_field(name = Weight, value = "95 `[43-46]`", inline = True)
+    Pacman.add_field(name = Weightclass, value = "`Middleweight`", inline = True)
+    Pacman.set_footer(text = "Can: Wall Jump")
+    await context.message.channel.send(embed = Pacman)
+
+
+@client.command(name = 'Robin')            #Robin Command: #58    
+async def Robin(context):
+    Robin = discord.Embed(title = "Fire Emblem Awakening (2012)", type = "rich", description = "Tomes, How Original" , color = 0x928f19)
+    Robin.set_thumbnail(url = "https://ssb.wiki.gallery/images/8/82/Robin_SSBU.png")
+    Robin.set_author(name = "#58: Robin", url = "https://open.spotify.com/track/699CaeyBkVTO87psMq3Yzw?si=91fb5d1a20bd4c9c", icon_url = "https://ssb.wiki.gallery/images/4/43/RobinHeadSSBUWebsite.png")
+    Robin.add_field(name = RunSpd, value = "1.265 `[86]`", inline = True)
+    Robin.add_field(name = AirSpd, value = "1.05 `[43-46]`", inline = True)
+    Robin.add_field(name = FallSpd, value = "1.5 `[57-60]`", inline = False)
+    Robin.add_field(name = Weight, value = "95 `[43-46]`", inline = True)
+    Robin.add_field(name = Weightclass, value = "`Middleweight`", inline = True)
+    await context.message.channel.send(embed = Robin)
+
+
+@client.command(name = 'Shulk')            #Shulk Command: #59    
+async def Shulk(context):
+    Shulk = discord.Embed(title = "Xenoblade Chronicles (2010)", type = "rich", description = "Shirtless Only" , color = 0xff4700)
+    Shulk.set_thumbnail(url = "https://ssb.wiki.gallery/images/0/0f/Shulk_SSBU.png")
+    Shulk.set_author(name = "#59: Shulk", url = "https://open.spotify.com/track/428HQh9G3bvjLcv6a2yWDY?si=675eceb833c740f6", icon_url = "https://ssb.wiki.gallery/images/b/bf/ShulkHeadSSBUWebsite.png")
+    Shulk.add_field(name = RunSpd, value = "1.672 `[48-49]`", inline = True)
+    Shulk.add_field(name = AirSpd, value = "1.113 `[32]`", inline = True)
+    Shulk.add_field(name = FallSpd, value = "1.58 `[47-50]`", inline = False)
+    Shulk.add_field(name = Weight, value = "97 `[36-38]`", inline = True)
+    Shulk.add_field(name = Weightclass, value = "`Middleweight`", inline = True)
+    await context.message.channel.send(embed = Shulk)
+
+
+@client.command(name = 'BowserJr')         #Bowser Jr. Command: #60    
+async def BowserJr(context):
+    Jr = discord.Embed(title = "Super Mario Sunshine (2002)", type = "rich", description = "The Real Roy" , color = 0x0fdf8f)
+    Jr.set_thumbnail(url = "https://ssb.wiki.gallery/images/2/2b/Bowser_Jr._SSBU.png")
+    Jr.set_author(name = "#60: Bowser Jr.", url = "https://open.spotify.com/track/6euyBF9W9EvBwoTVM1gS5N?si=ce0be307bb324f08", icon_url = "https://ssb.wiki.gallery/images/3/3e/BowserJrHeadSSBUWebsite.png")
+    Jr.add_field(name = RunSpd, value = "1.566 `[66]`", inline = True)
+    Jr.add_field(name = AirSpd, value = "1.134 `[27-29]`", inline = True)
+    Jr.add_field(name = FallSpd, value = "1.65 `[32-37]`", inline = False)
+    Jr.add_field(name = Weight, value = "108 `[9-12]`", inline = True)
+    Jr.add_field(name = Weightclass, value = "`Heavyweight`", inline = True)
+    await context.message.channel.send(embed = Jr)
+
+client.run(TOKEN)
