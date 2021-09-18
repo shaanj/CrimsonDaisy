@@ -911,8 +911,36 @@ async def duckhunt(context):
     duck.add_field(name = FallSpd, value = "1.65 `[33-38]`", inline = False)
     duck.add_field(name = Weight, value = "86 `[70-71]`", inline = True)
     duck.add_field(name = Weightclass, value = "`Lightweight`", inline = True)
+    duck.set_footer(text = "Can: Wall Jump")
     await context.message.channel.send(embed = duck)
 
+
+@client.command(name = 'ryu')         #Ryu Command: #62    
+async def ryu(context):
+    ryu = discord.Embed(title = "Street Fighter (1987)", type = "rich", description = "Akuma > Ryu" , color = 0x8fa8ae)
+    ryu.set_thumbnail(url = "https://ssb.wiki.gallery/images/6/61/Ryu_SSBU.png")
+    ryu.set_author(name = "#62: Ryu", url = "https://open.spotify.com/track/6UjaIJCoHvLUzIDZegPZPn?si=4d1ffcbcf8454eec", icon_url = "https://ssb.wiki.gallery/images/2/20/RyuHeadSSBUWebsite.png")
+    ryu.add_field(name = RunSpd, value = "1.6 `[59]`", inline = True)
+    ryu.add_field(name = AirSpd, value = "1.12 `[30-31]`", inline = True)
+    ryu.add_field(name = FallSpd, value = "1.6 `[43-47]`", inline = False)
+    ryu.add_field(name = Weight, value = "103 `[27-28]`", inline = True)
+    ryu.add_field(name = Weightclass, value = "`Heavyweight`", inline = True)
+    ryu.set_footer(text = "Despite being very similar, Ryu runs slower than Ken.")
+    await context.message.channel.send(embed = ryu)
+
+
+@client.command(name = 'ken')         #Ken Command: #63    
+async def ken(context):
+    ken = discord.Embed(title = "Street Fighter (1987)", type = "rich", description = "He's Red, But He's Not Marth" , color = 0xff0000)
+    ken.set_thumbnail(url = "https://ssb.wiki.gallery/images/f/f6/Ken_SSBU.png")
+    ken.set_author(name = "#62: Ryu", url = "https://open.spotify.com/track/2h9meI3ugFtFaopmmJNJX0?si=d36f99bf07e14b28", icon_url = "https://ssb.wiki.gallery/images/e/ef/KenHeadSSBUWebsite.png")
+    ken.add_field(name = RunSpd, value = "1.76 `[37-40]`", inline = True)
+    ken.add_field(name = AirSpd, value = "1.12 `[30-31]`", inline = True)
+    ken.add_field(name = FallSpd, value = "1.6 `[43-47]`", inline = False)
+    ken.add_field(name = Weight, value = "103 `[27-28]`", inline = True)
+    ken.add_field(name = Weightclass, value = "`Heavyweight`", inline = True)
+    ken.set_footer(text = "Despite being very similar, Ken runs faster than Ryu.")
+    await context.message.channel.send(embed = ken)
 
 
 client.run(TOKEN)
