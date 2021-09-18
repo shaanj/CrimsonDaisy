@@ -471,7 +471,7 @@ async def Chrom(context):
 
 @client.command(name = 'GnW')              #Mr. Game & Watch Command: #30 
 async def GnW(context):
-    GnW = discord.Embed(title = "Ball (1980)", type = "rich", description = "Google Chrome", color = 0x000000)
+    GnW = discord.Embed(title = "Ball (1980)", type = "rich", description = "Judgement 9 = Skill", color = 0x000000)
     GnW.set_thumbnail(url = "https://ssb.wiki.gallery/images/c/cb/Mr._Game_%26_Watch_SSBU.png")
     GnW.set_author(name = "#30: Mr. Game & Watch", url = "https://open.spotify.com/track/5MkWm3BoOIe4rXXQenM8Kw?si=9f821866898e4119", icon_url = "https://ssb.wiki.gallery/images/1/15/MrGame%26WatchHeadSSBUWebsite.png")
     GnW.add_field(name = RunSpd, value = "1.679 `[47]`", inline = True)
