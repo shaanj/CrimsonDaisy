@@ -915,7 +915,7 @@ async def duckhunt(context):
     await context.message.channel.send(embed = duck)
 
 
-@client.command(name = 'ryu')         #Ryu Command: #62    
+@client.command(name = 'ryu')              #Ryu Command: #62    
 async def ryu(context):
     ryu = discord.Embed(title = "Street Fighter (1987)", type = "rich", description = "Akuma > Ryu" , color = 0x8fa8ae)
     ryu.set_thumbnail(url = "https://ssb.wiki.gallery/images/6/61/Ryu_SSBU.png")
@@ -929,11 +929,11 @@ async def ryu(context):
     await context.message.channel.send(embed = ryu)
 
 
-@client.command(name = 'ken')         #Ken Command: #63    
+@client.command(name = 'ken')              #Ken Command: #63    
 async def ken(context):
     ken = discord.Embed(title = "Street Fighter (1987)", type = "rich", description = "He's Red, But He's Not Marth" , color = 0xff0000)
     ken.set_thumbnail(url = "https://ssb.wiki.gallery/images/f/f6/Ken_SSBU.png")
-    ken.set_author(name = "#62: Ryu", url = "https://open.spotify.com/track/2h9meI3ugFtFaopmmJNJX0?si=d36f99bf07e14b28", icon_url = "https://ssb.wiki.gallery/images/e/ef/KenHeadSSBUWebsite.png")
+    ken.set_author(name = "#63: Ken", url = "https://open.spotify.com/track/2h9meI3ugFtFaopmmJNJX0?si=d36f99bf07e14b28", icon_url = "https://ssb.wiki.gallery/images/e/ef/KenHeadSSBUWebsite.png")
     ken.add_field(name = RunSpd, value = "1.76 `[37-40]`", inline = True)
     ken.add_field(name = AirSpd, value = "1.12 `[30-31]`", inline = True)
     ken.add_field(name = FallSpd, value = "1.6 `[43-47]`", inline = False)
@@ -941,6 +941,59 @@ async def ken(context):
     ken.add_field(name = Weightclass, value = "`Heavyweight`", inline = True)
     ken.set_footer(text = "Despite being very similar, Ken runs faster than Ryu.")
     await context.message.channel.send(embed = ken)
+
+
+@client.command(name = 'cloud')            #Cloud Command: #64    
+async def cloud(context):
+    cloud = discord.Embed(title = "Final Fantasy VII (1997)", type = "rich", description = "Can't Disrespect The FF Series" , color = 0x272220)
+    cloud.set_thumbnail(url = "https://ssb.wiki.gallery/images/e/e7/Cloud-Alt1_SSBU.png")
+    cloud.set_author(name = "#64: Cloud", url = "https://open.spotify.com/track/76hjP6yrfypRpf82vhNGnr?si=2423534a8baa44f4", icon_url = "https://ssb.wiki.gallery/images/c/cb/CloudHeadSSBUWebsite.png")
+    cloud.add_field(name = RunSpd, value = "2.167 `[13]`", inline = True)
+    cloud.add_field(name = AirSpd, value = "1.155 `[20-25]`", inline = True)
+    cloud.add_field(name = FallSpd, value = "1.68 `[30-31]`", inline = False)
+    cloud.add_field(name = Weight, value = "100 `[31-32]`", inline = True)
+    cloud.add_field(name = Weightclass, value = "`Middleweight`", inline = True)
+    cloud.set_footer(text = "Can: Wall Jump")
+    await context.message.channel.send(embed = cloud)
+
+
+@client.command(name = 'corrin')           #Corrin Command: #65    
+async def corrin(context):
+    corn = discord.Embed(title = "Fire Emblem Fates (2015)", type = "rich", description = "Hot Take: Camilla Is Bad" , color = 0xae9e99)
+    corn.set_thumbnail(url = "https://ssb.wiki.gallery/images/c/c4/Corrin_SSBU.png")
+    corn.set_author(name = "#65: Corrin", url = "https://open.spotify.com/track/5SYruzE3eWWXG8K6sJnbH0?si=bd7b8858ae6a4fa2", icon_url = "https://ssb.wiki.gallery/images/6/6a/CorrinHeadSSBUWebsite.png")
+    corn.add_field(name = RunSpd, value = "1.595 `[60-64]`", inline = True)
+    corn.add_field(name = AirSpd, value = "1.019 `[52-54]`", inline = True)
+    corn.add_field(name = FallSpd, value = "1.65 `[33-38]`", inline = False)
+    corn.add_field(name = Weight, value = "98 `[33-36]`", inline = True)
+    corn.add_field(name = Weightclass, value = "`Middleweight`", inline = True)
+    await context.message.channel.send(embed = corn)
+
+
+@client.command(name = 'bayonetta')        #Bayonetta Command: #66    
+async def bayonetta(context):
+    bayo = discord.Embed(title = "Bayonetta (2009)", type = "rich", description = "Her Gameplay Does Not Fit Smash" , color = 0x000000)
+    bayo.set_thumbnail(url = "https://ssb.wiki.gallery/images/7/7c/Bayonetta_SSBU.png")
+    bayo.set_author(name = "#66: Bayonetta", url = "https://open.spotify.com/track/3Qm1GqTk8lh8lSbhe0D0Vt?si=f468b2627e224e2f", icon_url = "https://ssb.wiki.gallery/images/2/27/BayonettaHeadSSBUWebsite.png")
+    bayo.add_field(name = RunSpd, value = "1.76 `[37-40]`", inline = True)
+    bayo.add_field(name = AirSpd, value = "1.019 `[52-54]`", inline = True)
+    bayo.add_field(name = FallSpd, value = "1.77 `[20-21]`", inline = False)
+    bayo.add_field(name = Weight, value = "81 `[75]`", inline = True)
+    bayo.add_field(name = Weightclass, value = "`Featherweight`", inline = True)
+    await context.message.channel.send(embed = bayo)
+
+
+@client.command(name = 'inkling')          #Inkling Command: #67    
+async def inkling(context):
+    ink = discord.Embed(title = "Splatoon (2015)", type = "rich", description = "Roller = Dead" , color = 0xff8700)
+    ink.set_thumbnail(url = "https://ssb.wiki.gallery/images/2/2e/Inkling_SSBU.png")
+    ink.set_author(name = "#67: Inkling", url = "https://open.spotify.com/track/27eNesnp13438IaVE4kI82?si=81bf9c78c6154612", icon_url = "https://ssb.wiki.gallery/images/0/04/InklingHeadSSBUWebsite.png")
+    ink.add_field(name = RunSpd, value = "1.925 `[25]`", inline = True)
+    ink.add_field(name = AirSpd, value = "1.208 `[13-17]`", inline = True)
+    ink.add_field(name = FallSpd, value = "1.58 `[48-51]`", inline = False)
+    ink.add_field(name = Weight, value = "94 `[48-51]`", inline = True)
+    ink.add_field(name = Weightclass, value = "`Middleweight`", inline = True)
+    await context.message.channel.send(embed = ink)
 
 
 client.run(TOKEN)
