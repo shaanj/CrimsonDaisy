@@ -901,17 +901,17 @@ async def BowserJr(context):
 
 
 
-@client.command(name = 'DuckHunt')         #Duck Hunt Command: #61 THE RANKS ABOVE THIS ARE WRONG
-async def DuckHunt(context):
-    DH = discord.embed(title = "Duck Hunt (1984)", type = "rich", description = "Exploitable Recovery", color = 0x661a1a)
-    DH.set_thumbnail(url = "https://ssb.wiki.gallery/images/d/d8/Duck_Hunt_SSBU.png")
-    DH.set_author(name = "#61: Duck Hunt", url = "https://open.spotify.com/track/4LConvV84tce9nv0EDh0eK?si=11411849a9414853", icon_url = "https://ssb.wiki.gallery/images/3/38/DuckHuntHeadSSBUWebsite.png")
-    DH.add_field(name = RunSpd, value = "1.793 `[36]`", inline = True)
-    DH.add_field(name = AirSpd, value = "1.155 `[20-25]`", inline = True)
-    DH.add_field(name = FallSpd, value = "1.65 `[33-38]`", inline = False)
-    DH.add_field(name = Weight, value = "86 `[70-71]`", inline = True)
-    DH.add_field(name = Weightclass, value = "`Littleweight`", inline = True)
-    await context.message.channel.send(embed = DH)
+@client.command(name = 'duckhunt')         #Duck Hunt Command: #61  THE ABOVE RANKS ARE WRONG, FIX THEM LATER    
+async def duckhunt(context):
+    duck = discord.Embed(title = "Duck Hunt (1984)", type = "rich", description = "Exploitable Recovery" , color = 0x9c3838)
+    duck.set_thumbnail(url = "https://ssb.wiki.gallery/images/d/d8/Duck_Hunt_SSBU.png")
+    duck.set_author(name = "#61: Duck Hunt", url = "https://open.spotify.com/track/4LConvV84tce9nv0EDh0eK?si=1b2933a1d17c4398", icon_url = "https://ssb.wiki.gallery/images/3/38/DuckHuntHeadSSBUWebsite.png")
+    duck.add_field(name = RunSpd, value = "1.793 `[36]`", inline = True)
+    duck.add_field(name = AirSpd, value = "1.155 `[20-25]`", inline = True)
+    duck.add_field(name = FallSpd, value = "1.65 `[33-38]`", inline = False)
+    duck.add_field(name = Weight, value = "86 `[70-71]`", inline = True)
+    duck.add_field(name = Weightclass, value = "`Lightweight`", inline = True)
+    await context.message.channel.send(embed = duck)
 
 
 
