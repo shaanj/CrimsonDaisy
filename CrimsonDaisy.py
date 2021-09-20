@@ -801,8 +801,8 @@ async def Rosa(context):
     await context.message.channel.send(embed = Rosa)
 
 
-@client.command(name = 'LittleMac')        #Little Mac Command: #54      
-async def LittleMac(context):
+@client.command(name = 'Mac')              #Little Mac Command: #54      
+async def Mac(context):
     Mac = discord.Embed(title = "Punch-Out!! (1987)", type = "rich", description = "Air Game 10/10" , color = 0x2aa96e)
     Mac.set_thumbnail(url = "https://ssb.wiki.gallery/images/5/53/Little_Mac_SSBU.png")
     Mac.set_author(name = "#54: Little Mac", url = "https://open.spotify.com/track/0FR1i0jsRol6lNDsI8wYbd?si=b9bd22989b1d4c6e", icon_url = "https://ssb.wiki.gallery/images/8/87/LittleMacHeadSSBUWebsite.png")
@@ -811,6 +811,7 @@ async def LittleMac(context):
     Mac.add_field(name = FallSpd, value = "1.95 `[2-4]`", inline = False)
     Mac.add_field(name = Weight, value = "87 `[68]`", inline = True)
     Mac.add_field(name = Weightclass, value = "`Lightweight`", inline = True)
+    Mac.set_footer(text = "Can: Wall Jump")
     await context.message.channel.send(embed = Mac)
 
 
@@ -980,6 +981,7 @@ async def bayonetta(context):
     bayo.add_field(name = FallSpd, value = "1.77 `[20-21]`", inline = False)
     bayo.add_field(name = Weight, value = "81 `[75]`", inline = True)
     bayo.add_field(name = Weightclass, value = "`Featherweight`", inline = True)
+    bayo.set_footer(text = "Can: Wall Jump, Wall Cling")
     await context.message.channel.send(embed = bayo)
 
 
@@ -993,6 +995,7 @@ async def inkling(context):
     ink.add_field(name = FallSpd, value = "1.58 `[48-51]`", inline = False)
     ink.add_field(name = Weight, value = "94 `[48-51]`", inline = True)
     ink.add_field(name = Weightclass, value = "`Middleweight`", inline = True)
+    ink.set_footer(text = "Can: Wall Jump")
     await context.message.channel.send(embed = ink)
 
 
@@ -1013,4 +1016,45 @@ async def ridley(context):
     await context.message.channel.send(embed = rid)
 
 
-client.run(TOKEN)
+@client.command(name = 'simon')            #Simon Command: #69    
+async def simon(context):
+    simon = discord.Embed(title = "Castlevania (1986)", type = "rich", description = "Overhyped" , color = 0xa89db0)
+    simon.set_thumbnail(url = "https://ssb.wiki.gallery/images/9/95/Simon_SSBU.png")
+    simon.set_author(name = "#69: Simon", url = "https://open.spotify.com/track/4HXzm6IXEvVbfzEADMAVng?si=fd04aba3800f49ab", icon_url = "https://ssb.wiki.gallery/images/5/52/SimonHeadSSBUWebsite.png")
+    simon.add_field(name = RunSpd, value = "1.52 `[72-73]`", inline = True)
+    simon.add_field(name = AirSpd, value = "0.94 `[69-70]`", inline = True)
+    simon.add_field(name = FallSpd, value = "1.85 `[9-11]`", inline = False)
+    simon.add_field(name = Weight, value = "107 `[14-18]`", inline = True)
+    simon.add_field(name = Weightclass, value = "`Heavyweight`", inline = True)
+    simon.set_footer(text = "Exact same stats and ranks as Richter\nCan: Tether Recovery")
+    await context.message.channel.send(embed = simon)
+
+
+@client.command(name = 'richter')          #Richter Command: #70    
+async def richter(context):
+    richter = discord.Embed(title = "Castlevania: Rondo of Blood (1993)", type = "rich", description = "Worst Clone Ever Made" , color = 0x1c299a)
+    richter.set_thumbnail(url = "https://ssb.wiki.gallery/images/c/c2/Richter_SSBU.png")
+    richter.set_author(name = "#70: Richter", url = "https://open.spotify.com/track/7jzUgYVnL1fHdj8wexTkYV?si=c46631c6cc15463e", icon_url = "https://ssb.wiki.gallery/images/a/ab/RichterHeadSSBUWebsite.png")
+    richter.add_field(name = RunSpd, value = "1.52 `[72-73]`", inline = True)
+    richter.add_field(name = AirSpd, value = "0.94 `[69-70]`", inline = True)
+    richter.add_field(name = FallSpd, value = "1.85 `[9-11]`", inline = False)
+    richter.add_field(name = Weight, value = "107 `[14-18]`", inline = True)
+    richter.add_field(name = Weightclass, value = "`Heavyweight`", inline = True)
+    richter.set_footer(text = "Exact same stats and ranks as Richter\nCan: Tether Recovery")
+    await context.message.channel.send(embed = richter)
+
+
+@client.command(name = 'Krool')            #King K. Rool Command: #71    
+async def Krool(context):
+    King = discord.Embed(title = "Donkey Kong Country (1994)", type = "rich", description = "BuStEd HeAvY?" , color = 0x07ab13)
+    King.set_thumbnail(url = "https://ssb.wiki.gallery/images/b/b6/King_K._Rool_SSBU.png")
+    King.set_author(name = "#71: King K. Rool", url = "https://open.spotify.com/track/3qZAMhNqJGiUrMGvkyautR?si=0e17e9cfa317486d", icon_url = "https://ssb.wiki.gallery/images/3/35/KingKRoolHeadSSBUWebsite.png")
+    King.add_field(name = RunSpd, value = "1.485 `[76]`", inline = True)
+    King.add_field(name = AirSpd, value = "0.945 `[68]`", inline = True)
+    King.add_field(name = FallSpd, value = "1.7 `[27-29]`", inline = False)
+    King.add_field(name = Weight, value = "133 `[2]`", inline = True)
+    King.add_field(name = Weightclass, value = "`Super Heavyweight`", inline = True)
+    await context.message.channel.send(embed = King)
+
+
+client.run(TOKEN) 
