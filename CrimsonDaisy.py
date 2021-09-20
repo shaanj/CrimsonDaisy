@@ -819,7 +819,7 @@ async def LittleMac(context):
 
 
 
-@client.command(name = 'Greninja')         #Greninja Command: #55      
+@client.command(name = 'Greninja')         #Greninja Command: #55       FIFTH ROW STARTS HERE
 async def Greninja(context):
     Greninja = discord.Embed(title = "Pokemon X and Y (2013)", type = "rich", description = "I've Met Elu Tran" , color = 0x089ffd)
     Greninja.set_thumbnail(url = "https://ssb.wiki.gallery/images/d/da/Greninja_SSBU.png")
@@ -994,6 +994,23 @@ async def inkling(context):
     ink.add_field(name = Weight, value = "94 `[48-51]`", inline = True)
     ink.add_field(name = Weightclass, value = "`Middleweight`", inline = True)
     await context.message.channel.send(embed = ink)
+
+
+
+
+
+
+@client.command(name = 'ridley')           #Ridley Command: #68    SIXTH ROW STARTS HERE
+async def ridley(context):
+    rid = discord.Embed(title = "Metroid (1986)", type = "rich", description = "Too Large For Smash" , color = 0xab47f5)
+    rid.set_thumbnail(url = "https://ssb.wiki.gallery/images/2/27/Ridley_SSBU.png")
+    rid.set_author(name = "#68: Ridley", url = "https://open.spotify.com/track/4XpuWpTK8vsrA5JZiFsMHz?si=f5175af1b36f405e", icon_url = "https://ssb.wiki.gallery/images/7/7c/RidleyHeadSSBUWebsite.png")
+    rid.add_field(name = RunSpd, value = "2.2 `[10-11]`", inline = True)
+    rid.add_field(name = AirSpd, value = "1.05 `[43-46]`", inline = True)
+    rid.add_field(name = FallSpd, value = "1.78 `[19]`", inline = False)
+    rid.add_field(name = Weight, value = "107 `[14-18]`", inline = True)
+    rid.add_field(name = Weightclass, value = "`Heavyweight`", inline = True)
+    await context.message.channel.send(embed = rid)
 
 
 client.run(TOKEN)
