@@ -762,7 +762,7 @@ async def Villager(context):
 
 @client.command(name = 'Megaman')         #Megaman Command: #51      
 async def Megaman(context):
-    Mega = discord.Embed(title = "Mega Man (1987)", type = "rich", description = "Dead Franchise" , color = 0x00a7ff)
+    Mega = discord.Embed(title = "Mega Man (1987)", type = "rich", description = "Super Fighting Robot" , color = 0x00a7ff)
     Mega.set_thumbnail(url = "https://ssb.wiki.gallery/images/4/46/Mega_Man_SSBU.png")
     Mega.set_author(name = "#51: Megaman", url = "https://open.spotify.com/track/6iKu0q1ix7YogUSe4oNN30?si=d8a469a572a948a0", icon_url = "https://ssb.wiki.gallery/images/2/26/MegaManHeadSSBUWebsite.png")
     Mega.add_field(name = RunSpd, value = "1.602 `[58]`", inline = True)
@@ -876,7 +876,7 @@ async def Robin(context):
 
 @client.command(name = 'Shulk')            #Shulk Command: #59    
 async def Shulk(context):
-    Shulk = discord.Embed(title = "Xenoblade Chronicles (2010)", type = "rich", description = "Shirtless Only" , color = 0xff4700)
+    Shulk = discord.Embed(title = "Xenoblade Chronicles (2010)", type = "rich", description = "Melia > Fiora" , color = 0xff4700)
     Shulk.set_thumbnail(url = "https://ssb.wiki.gallery/images/0/0f/Shulk_SSBU.png")
     Shulk.set_author(name = "#59: Shulk", url = "https://open.spotify.com/track/428HQh9G3bvjLcv6a2yWDY?si=675eceb833c740f6", icon_url = "https://ssb.wiki.gallery/images/b/bf/ShulkHeadSSBUWebsite.png")
     Shulk.add_field(name = RunSpd, value = "1.672 `[48-49]`", inline = True)
