@@ -368,7 +368,7 @@ async def Falco(context):
 
 @client.command(name = 'Marth')            #Marth Command: #23
 async def Marth(context):
-    Marth = discord.Embed(title = "Fire Emblem: Shadow Dragon and the Blade of Light (1993)", type = "rich", description = "Just The Tip", color = 0x0074ff)
+    Marth = discord.Embed(title = "Fire Emblem: Shadow Dragon and the Blade of Light (1990)", type = "rich", description = "Just The Tip", color = 0x0074ff)
     Marth.set_thumbnail(url = "https://ssb.wiki.gallery/images/e/e9/Marth_SSBU.png")
     Marth.set_author(name = "#23: Marth", url = "https://open.spotify.com/track/2Cn5v5xb9WqnxqPrEFwUjS?si=475aa9eb4b4b4256", icon_url = "https://ssb.wiki.gallery/images/a/ae/MarthHeadSSBUWebsite.png")
     Marth.add_field(name = RunSpd, value = "1.964 `[23-24]`", inline = True)
@@ -566,7 +566,7 @@ async def Snake(context):
 @client.command(name = 'Ike')              #Ike Command: #37 
 async def Ike(context):
     Ike = discord.Embed(title = "Fire Emblem: Path of Radiance (2005)", type = "rich", description = "He Fights For His Friends" , color = 0xd8512e)
-    Ike.set_thumbnail(url = "https://ssb.wiki.gallery/images/e/ee/Ike-Alt1_SSBU.png")
+    Ike.set_thumbnail(url = "https://ssb.wiki.gallery/images/8/86/Ike_SSBU.png")
     Ike.set_author(name = "#37: Ike", url = "https://open.spotify.com/track/0RbeHcWAC742U1RVH66B93?si=a0f594946d2c4a75", icon_url = "https://ssb.wiki.gallery/images/2/25/IkeHeadSSBUWebsite.png")
     Ike.add_field(name = RunSpd, value = "1.507 `[73]`", inline = True)
     Ike.add_field(name = AirSpd, value = "1.134 `[27-29]`", inline = True)
