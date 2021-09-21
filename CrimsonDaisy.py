@@ -1057,4 +1057,32 @@ async def Krool(context):
     await context.message.channel.send(embed = King)
 
 
+@client.command(name = 'Isabelle')         #Isabelle Command: #72    
+async def Isabelle(context):
+    Isa = discord.Embed(title = "Animal Crossing: New Leaf (2012)", type = "rich", description = "Rod Mechanics" , color = 0xecef18)
+    Isa.set_thumbnail(url = "https://ssb.wiki.gallery/images/2/2b/Isabelle_SSBU.png")
+    Isa.set_author(name = "#72: Isabelle", url = "https://open.spotify.com/track/5KG2Fv3gQBpFKHgNY3qMaG?si=80421c68b28b4eb8", icon_url = "https://ssb.wiki.gallery/images/2/2e/IsabelleHeadSSBUWebsite.png")
+    Isa.add_field(name = RunSpd, value = "1.48 `[77]`", inline = True)
+    Isa.add_field(name = AirSpd, value = "1.02 `[51]`", inline = True)
+    Isa.add_field(name = FallSpd, value = "1.3 `[79-81]`", inline = False)
+    Isa.add_field(name = Weight, value = "88 `[66-68]`", inline = True)
+    Isa.add_field(name = Weightclass, value = "`Lightweight`", inline = True)
+    Isa.set_footer(text = "Can: Tether Recovery")
+    await context.message.channel.send(embed = Isa)
+
+
+@client.command(name = 'Incineroar')       #Incineroar Command: #73    
+async def Incineroar(context):
+    Roar = discord.Embed(title = "Pokemon Sun and Moon (2016)", type = "rich", description = "Don't Press Shield" , color = 0xe0524a)
+    Roar.set_thumbnail(url = "https://ssb.wiki.gallery/images/c/c4/Incineroar_SSBU.png")
+    Roar.set_author(name = "#73: Incineroar", url = "https://open.spotify.com/track/0t8enIfj5nKlj1tqh57iKp?si=8d4a90653da24ca8", icon_url = "https://ssb.wiki.gallery/images/e/e3/IncineroarHeadSSBUWebsite.png")
+    Roar.add_field(name = RunSpd, value = "1.18 `[88]`", inline = True)
+    Roar.add_field(name = AirSpd, value = "0.88 `[80]`", inline = True)
+    Roar.add_field(name = FallSpd, value = "1.76 `[22-23]`", inline = False)
+    Roar.add_field(name = Weight, value = "116 `[6-7]`", inline = True)
+    Roar.add_field(name = Weightclass, value = "`Super Heavyweight`", inline = True)
+    Roar.set_footer(text = "Slowest run speed in the game")
+    await context.message.channel.send(embed = Roar)
+
+
 client.run(TOKEN) 
