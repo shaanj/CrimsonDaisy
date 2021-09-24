@@ -29,7 +29,7 @@ async def help(context):
     CrimsonDaisy.set_author(name = "Crimson Daisy", icon_url = "https://ssb.wiki.gallery/images/2/2d/DaisyHeadSSBUWebsite.png")
     CrimsonDaisy.add_field(name = "&smash <OPTIONAL @USER>", value = "Smash that mf", inline = False)
     CrimsonDaisy.add_field(name = "&Daisy <Smash Character>", value = "Smash Data (Absolute Scale and Ranks)", inline = False)
-    CrimsonDaisy.set_footer(text = "[X] = Rank out of 87.\n[X-Y] = More than 1 character has this rank.")
+    CrimsonDaisy.set_footer(text = "[X] = Rank out of 88.\n[X-Y] = More than 1 character has this rank.")
     await context.message.channel.send(embed = CrimsonDaisy)
 
 @client.event
@@ -902,8 +902,8 @@ async def BowserJr(context):
 
 
 
-@client.command(name = 'duckhunt')         #Duck Hunt Command: #61  THE ABOVE RANKS ARE WRONG, FIX THEM LATER    
-async def duckhunt(context):
+@client.command(name = 'Duckhunt')         #Duck Hunt Command: #61  THE ABOVE RANKS ARE WRONG, FIX THEM LATER    
+async def Duckhunt(context):
     duck = discord.Embed(title = "Duck Hunt (1984)", type = "rich", description = "Exploitable Recovery" , color = 0x9c3838)
     duck.set_thumbnail(url = "https://ssb.wiki.gallery/images/d/d8/Duck_Hunt_SSBU.png")
     duck.set_author(name = "#61: Duck Hunt", url = "https://open.spotify.com/track/4LConvV84tce9nv0EDh0eK?si=1b2933a1d17c4398", icon_url = "https://ssb.wiki.gallery/images/3/38/DuckHuntHeadSSBUWebsite.png")
@@ -916,8 +916,8 @@ async def duckhunt(context):
     await context.message.channel.send(embed = duck)
 
 
-@client.command(name = 'ryu')              #Ryu Command: #62    
-async def ryu(context):
+@client.command(name = 'Ryu')              #Ryu Command: #62    
+async def Ryu(context):
     ryu = discord.Embed(title = "Street Fighter (1987)", type = "rich", description = "Akuma > Ryu" , color = 0x8fa8ae)
     ryu.set_thumbnail(url = "https://ssb.wiki.gallery/images/6/61/Ryu_SSBU.png")
     ryu.set_author(name = "#62: Ryu", url = "https://open.spotify.com/track/6UjaIJCoHvLUzIDZegPZPn?si=4d1ffcbcf8454eec", icon_url = "https://ssb.wiki.gallery/images/2/20/RyuHeadSSBUWebsite.png")
@@ -930,8 +930,8 @@ async def ryu(context):
     await context.message.channel.send(embed = ryu)
 
 
-@client.command(name = 'ken')              #Ken Command: #63    
-async def ken(context):
+@client.command(name = 'Ken')              #Ken Command: #63    
+async def Ken(context):
     ken = discord.Embed(title = "Street Fighter (1987)", type = "rich", description = "He's Red, But He's Not Marth" , color = 0xff0000)
     ken.set_thumbnail(url = "https://ssb.wiki.gallery/images/f/f6/Ken_SSBU.png")
     ken.set_author(name = "#63: Ken", url = "https://open.spotify.com/track/2h9meI3ugFtFaopmmJNJX0?si=d36f99bf07e14b28", icon_url = "https://ssb.wiki.gallery/images/e/ef/KenHeadSSBUWebsite.png")
@@ -944,8 +944,8 @@ async def ken(context):
     await context.message.channel.send(embed = ken)
 
 
-@client.command(name = 'cloud')            #Cloud Command: #64    
-async def cloud(context):
+@client.command(name = 'Cloud')            #Cloud Command: #64    
+async def Cloud(context):
     cloud = discord.Embed(title = "Final Fantasy VII (1997)", type = "rich", description = "Can't Disrespect The FF Series" , color = 0x272220)
     cloud.set_thumbnail(url = "https://ssb.wiki.gallery/images/e/e7/Cloud-Alt1_SSBU.png")
     cloud.set_author(name = "#64: Cloud", url = "https://open.spotify.com/track/76hjP6yrfypRpf82vhNGnr?si=2423534a8baa44f4", icon_url = "https://ssb.wiki.gallery/images/c/cb/CloudHeadSSBUWebsite.png")
@@ -958,8 +958,8 @@ async def cloud(context):
     await context.message.channel.send(embed = cloud)
 
 
-@client.command(name = 'corrin')           #Corrin Command: #65    
-async def corrin(context):
+@client.command(name = 'Corrin')           #Corrin Command: #65    
+async def Corrin(context):
     corn = discord.Embed(title = "Fire Emblem Fates (2015)", type = "rich", description = "Hot Take: Camilla Is Bad" , color = 0xae9e99)
     corn.set_thumbnail(url = "https://ssb.wiki.gallery/images/c/c4/Corrin_SSBU.png")
     corn.set_author(name = "#65: Corrin", url = "https://open.spotify.com/track/5SYruzE3eWWXG8K6sJnbH0?si=bd7b8858ae6a4fa2", icon_url = "https://ssb.wiki.gallery/images/6/6a/CorrinHeadSSBUWebsite.png")
@@ -971,8 +971,8 @@ async def corrin(context):
     await context.message.channel.send(embed = corn)
 
 
-@client.command(name = 'bayonetta')        #Bayonetta Command: #66    
-async def bayonetta(context):
+@client.command(name = 'Bayonetta')        #Bayonetta Command: #66    
+async def Bayonetta(context):
     bayo = discord.Embed(title = "Bayonetta (2009)", type = "rich", description = "Her Gameplay Does Not Fit Smash" , color = 0x000000)
     bayo.set_thumbnail(url = "https://ssb.wiki.gallery/images/7/7c/Bayonetta_SSBU.png")
     bayo.set_author(name = "#66: Bayonetta", url = "https://open.spotify.com/track/3Qm1GqTk8lh8lSbhe0D0Vt?si=f468b2627e224e2f", icon_url = "https://ssb.wiki.gallery/images/2/27/BayonettaHeadSSBUWebsite.png")
@@ -985,8 +985,8 @@ async def bayonetta(context):
     await context.message.channel.send(embed = bayo)
 
 
-@client.command(name = 'inkling')          #Inkling Command: #67    
-async def inkling(context):
+@client.command(name = 'Inkling')          #Inkling Command: #67    
+async def Inkling(context):
     ink = discord.Embed(title = "Splatoon (2015)", type = "rich", description = "Roller = Dead" , color = 0xff8700)
     ink.set_thumbnail(url = "https://ssb.wiki.gallery/images/2/2e/Inkling_SSBU.png")
     ink.set_author(name = "#67: Inkling", url = "https://open.spotify.com/track/27eNesnp13438IaVE4kI82?si=81bf9c78c6154612", icon_url = "https://ssb.wiki.gallery/images/0/04/InklingHeadSSBUWebsite.png")
@@ -1003,8 +1003,8 @@ async def inkling(context):
 
 
 
-@client.command(name = 'ridley')           #Ridley Command: #68    SIXTH ROW STARTS HERE
-async def ridley(context):
+@client.command(name = 'Ridley')           #Ridley Command: #68    SIXTH ROW STARTS HERE
+async def Ridley(context):
     rid = discord.Embed(title = "Metroid (1986)", type = "rich", description = "Too Large For Smash" , color = 0xab47f5)
     rid.set_thumbnail(url = "https://ssb.wiki.gallery/images/2/27/Ridley_SSBU.png")
     rid.set_author(name = "#68: Ridley", url = "https://open.spotify.com/track/4XpuWpTK8vsrA5JZiFsMHz?si=f5175af1b36f405e", icon_url = "https://ssb.wiki.gallery/images/7/7c/RidleyHeadSSBUWebsite.png")
@@ -1016,8 +1016,8 @@ async def ridley(context):
     await context.message.channel.send(embed = rid)
 
 
-@client.command(name = 'simon')            #Simon Command: #69    
-async def simon(context):
+@client.command(name = 'Simon')            #Simon Command: #69    
+async def Simon(context):
     simon = discord.Embed(title = "Castlevania (1986)", type = "rich", description = "Overhyped" , color = 0xa89db0)
     simon.set_thumbnail(url = "https://ssb.wiki.gallery/images/9/95/Simon_SSBU.png")
     simon.set_author(name = "#69: Simon", url = "https://open.spotify.com/track/4HXzm6IXEvVbfzEADMAVng?si=fd04aba3800f49ab", icon_url = "https://ssb.wiki.gallery/images/5/52/SimonHeadSSBUWebsite.png")
@@ -1030,8 +1030,8 @@ async def simon(context):
     await context.message.channel.send(embed = simon)
 
 
-@client.command(name = 'richter')          #Richter Command: #70    
-async def richter(context):
+@client.command(name = 'Richter')          #Richter Command: #70    
+async def Richter(context):
     richter = discord.Embed(title = "Castlevania: Rondo of Blood (1993)", type = "rich", description = "Worst Clone Ever Made" , color = 0x1c299a)
     richter.set_thumbnail(url = "https://ssb.wiki.gallery/images/c/c2/Richter_SSBU.png")
     richter.set_author(name = "#70: Richter", url = "https://open.spotify.com/track/7jzUgYVnL1fHdj8wexTkYV?si=c46631c6cc15463e", icon_url = "https://ssb.wiki.gallery/images/a/ab/RichterHeadSSBUWebsite.png")
@@ -1083,6 +1083,34 @@ async def Incineroar(context):
     Roar.add_field(name = Weightclass, value = "`Super Heavyweight`", inline = True)
     Roar.set_footer(text = "Slowest run speed in the game")
     await context.message.channel.send(embed = Roar)
+
+
+@client.command(name = 'Plant')            #Piranha Plant Command: #74    
+async def Plant(context):
+    Gang = discord.Embed(title = "Super Mario Bros. (1985)", type = "rich", description = "Plant Gang" , color = 0x23d13f)
+    Gang.set_thumbnail(url = "https://ssb.wiki.gallery/images/f/f0/Piranha_Plant_SSBU.png")
+    Gang.set_author(name = "#74: Piranha Plant", url = "https://open.spotify.com/track/7HgjBaplhOX93Ji1bPVUOi?si=24ab331345564ac1", icon_url = "https://ssb.wiki.gallery/images/c/cf/PiranhaPlantHeadSSBUWebsite.png")
+    Gang.add_field(name = RunSpd, value = "1.72 `[44-45]`", inline = True)
+    Gang.add_field(name = AirSpd, value = "1 `[58-59]`", inline = True)
+    Gang.add_field(name = FallSpd, value = "1.95 `[2-4]`", inline = False)
+    Gang.add_field(name = Weight, value = "112 `[9]`", inline = True)
+    Gang.add_field(name = Weightclass, value = "`Heavyweight`", inline = True)
+    await context.message.channel.send(embed = Gang)
+
+
+@client.command(name = 'Joker')            #Joker Command: #75    
+async def Joker(context):
+    Joker = discord.Embed(title = "Persona 5 (2016)", type = "rich", description = "Yu Narukami Is Better" , color = 0x170803)
+    Joker.set_thumbnail(url = "https://ssb.wiki.gallery/images/5/5c/Joker_SSBU.png")
+    Joker.set_author(name = "#75: Joker", url = "https://open.spotify.com/track/4PlpK3tDrcPlSYdnXMdQB6?si=b7029acf1b974ec0", icon_url = "https://ssb.wiki.gallery/images/6/63/JokerHeadSSBUWebsite.png")
+    Joker.add_field(name = RunSpd, value = "2.06 `[18]`", inline = True)
+    Joker.add_field(name = AirSpd, value = "1.1 `[37-38]`", inline = True)
+    Joker.add_field(name = FallSpd, value = "1.63 `[39-40]`", inline = False)
+    Joker.add_field(name = Weight, value = "93 `[52]`", inline = True)
+    Joker.add_field(name = Weightclass, value = "`Middleweight`", inline = True)
+    Joker.set_footer(text = "Can: Tether Recovery, Wall Jump")
+    await context.message.channel.send(embed = Joker)
+
 
 
 client.run(TOKEN) 
