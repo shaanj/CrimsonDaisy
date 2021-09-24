@@ -230,7 +230,7 @@ async def Puff(context):
     Puff.add_field(name = RunSpd, value = "1.271 `[85]`", inline = True)
     Puff.add_field(name = AirSpd, value = "1.332 `[2]`", inline = True)
     Puff.add_field(name = FallSpd, value = "0.98 `[87]`", inline = False)
-    Puff.add_field(name = Weight, value = "68 `[86]`", inline = True)
+    Puff.add_field(name = Weight, value = "68 `[88]`", inline = True)
     Puff.add_field(name = Weightclass, value = "`Balloonweight`", inline = True)
     Puff.set_footer(text = "Slowest fall speed (floatiest) in the game")
     await context.message.channel.send(embed = Puff)
@@ -429,7 +429,7 @@ async def Ganondorf(context):
 
 @client.command(name = 'Mewtwo')           #Mewtwo Command: #27     THIRD ROW STARTS HERE
 async def Mewtwo(context):
-    Mew = discord.Embed(title = "Pokemon Red and Green (1998)", type = "rich", description = "Hitbox Includes Tail", color = 0x9252df)
+    Mew = discord.Embed(title = "Pokemon Red and Green (1996)", type = "rich", description = "Hitbox Includes Tail", color = 0x9252df)
     Mew.set_thumbnail(url = "https://ssb.wiki.gallery/images/d/de/Mewtwo_SSBU.png")
     Mew.set_author(name = "#27: Mewtwo", url = "https://open.spotify.com/track/0zjEZTXsL4vMTMffx2gHdT?si=4103581b7747481a", icon_url = "https://ssb.wiki.gallery/images/7/7e/MewtwoHeadSSBUWebsite.png")
     Mew.add_field(name = RunSpd, value = "2.255 `[9]`", inline = True)
