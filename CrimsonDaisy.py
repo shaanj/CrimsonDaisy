@@ -27,8 +27,9 @@ async def help(context):
     CrimsonDaisy = discord.Embed(title = "Help", type = "rich", description = "I am Crimson mf Daisy", color = 0xfca103)
     CrimsonDaisy.set_thumbnail(url = "https://www.vggts.gdn/where/ssbu/13e%20VGGTS%20SSBU%20Daisy%20icon%20ver%202.png")
     CrimsonDaisy.set_author(name = "Crimson Daisy", icon_url = "https://ssb.wiki.gallery/images/2/2d/DaisyHeadSSBUWebsite.png")
-    CrimsonDaisy.add_field(name = "&smash <OPTIONAL @USER>", value = "Smash that mf", inline = False)
-    CrimsonDaisy.add_field(name = "&Daisy <Smash Character>", value = "Smash Data (Absolute Scale and Ranks)", inline = False)
+    CrimsonDaisy.add_field(name = "&smash [Optional @User]", value = "Smash that mf", inline = True)
+    CrimsonDaisy.add_field(name = "&Daisy [Smash Character]", value = "Smash Data (Absolute Scale & Ranks)", inline = True)
+    CrimsonDaisy.add_field(name = "&Names", value = "Special Fighter Command Names", inline = False)
     CrimsonDaisy.set_footer(text = "[X] = Rank out of 88.\n[X-Y] = More than 1 character has this rank.")
     await context.message.channel.send(embed = CrimsonDaisy)
 
@@ -58,7 +59,47 @@ async def smash(context, user : discord.User = None):
     else:
         await context.send("I'm gonna smash " + user.mention)
 
-                                        
+
+@client.command(name = 'Names')            #Fighter Names
+async def Names(context):
+    Names = discord.Embed(title = "Fighter Names", type = "rich", description = "Special Fighter Name Commands", color = 0xff0000)
+    Names.set_thumbnail(url = "https://ssb.wiki.gallery/images/4/44/Mario_SSBU.png")
+    Names.set_author(name = "The Names", url = "https://open.spotify.com/track/53BIF7mH7UL7yTzOsKIoEw?si=2e2258ae59594ec8", icon_url = "https://ssb.wiki.gallery/images/9/9e/MarioHeadSSBUWebsite.png")
+    Names.add_field(name = "Bayonetta", value = "`bayo`", inline = True)
+    Names.add_field(name = "Bowser Jr.", value = "`bowserjr`", inline = True)
+    Names.add_field(name = "Captain Falcon", value = "`falcon`", inline = True)
+    Names.add_field(name = "Dark Pit", value = "`darkpit`", inline = True)
+    Names.add_field(name = "Dark Samus", value = "`darksamus`", inline = True)
+    Names.add_field(name = "Diddy Kong", value = "`diddy`", inline = True)
+    Names.add_field(name = "Donkey Kong", value = "`dk`", inline = True)
+    Names.add_field(name = "Dr. Mario", value = "`doc`", inline = True)
+    Names.add_field(name = "Duck Hunt", value = "`duckhunt`", inline = True)
+    Names.add_field(name = "Ganondorf", value = "`ganon`", inline = True)
+    Names.add_field(name = "Mr. Game and Watch", value = "`gnw`", inline = True)
+    Names.add_field(name = "Ice Climbers", value = "`icies`", inline = True)
+    Names.add_field(name = "Jigglypuff", value = "`puff`", inline = True)
+    Names.add_field(name = "King Dedede", value = "`ddd`", inline = True)
+    Names.add_field(name = "King K. Rool", value = "`krool`", inline = True)
+    Names.add_field(name = "Little Mac", value = "`mac`", inline = True)
+    Names.add_field(name = "Meta Knight", value = "`mk`", inline = True)
+    Names.add_field(name = "Pac-Man", value = "`pacman`", inline = True)
+    Names.add_field(name = "Piranha Plant", value = "`plant`", inline = True)
+    Names.add_field(name = "Pokemon Trainer", value = "`squirtle`, `ivysaur`, `charizard`", inline = True)
+    Names.add_field(name = "Rosalina & Luma", value = "`rosa`", inline = True)
+    Names.add_field(name = "Toon Link", value = "`toonlink`", inline = True)
+    Names.add_field(name = "Wii Fit Trainer", value = "`wiifit`", inline = True)
+    Names.add_field(name = "Young Link", value = "`younglink`", inline = True)
+    Names.add_field(name = "Zero Suit Samus", value = "`zss`", inline = True)
+    Names.set_footer(text = "For All Other Fighters, Use Their Regular Names.\nDaisy = &Daisy, Ivysaur = &Ivysaur")
+    await context.message.channel.send(embed = Names)
+
+
+
+
+
+
+
+
 @client.command(name = 'Mario')            #Mario Command: #1       FIRST ROW STARTS HERE
 async def Mario(context):
     Mario = discord.Embed(title = "Donkey Kong (1981)", type = "rich", description = "Dunks on Dunks", color = 0xff0000)
@@ -408,8 +449,8 @@ async def YoungLink(context):
     await context.message.channel.send(embed = YLink)
 
 
-@client.command(name = 'Ganondorf')        #Ganondorf Command: #26
-async def Ganondorf(context):
+@client.command(name = 'Ganon')        #Ganondorf Command: #26
+async def Ganon(context):
     Ganon = discord.Embed(title = "The Legend of Zelda: Ocarina of Time (1998)", type = "rich", description = "The King of Disrespect", color = 0x5400b8)
     Ganon.set_thumbnail(url = "https://ssb.wiki.gallery/images/9/91/Ganondorf_SSBU.png")
     Ganon.set_author(name = "#26: Ganondorf", url = "https://open.spotify.com/track/7kWqgvTLq4pb5nGqtwJREJ?si=ebd635b0f04445e5", icon_url = "https://ssb.wiki.gallery/images/b/b6/GanondorfHeadSSBUWebsite.png")
@@ -971,8 +1012,8 @@ async def Corrin(context):
     await context.message.channel.send(embed = corn)
 
 
-@client.command(name = 'Bayonetta')        #Bayonetta Command: #66    
-async def Bayonetta(context):
+@client.command(name = 'Bayo')        #Bayonetta Command: #66    
+async def Bayo(context):
     bayo = discord.Embed(title = "Bayonetta (2009)", type = "rich", description = "Her Gameplay Does Not Fit Smash" , color = 0x000000)
     bayo.set_thumbnail(url = "https://ssb.wiki.gallery/images/7/7c/Bayonetta_SSBU.png")
     bayo.set_author(name = "#66: Bayonetta", url = "https://open.spotify.com/track/3Qm1GqTk8lh8lSbhe0D0Vt?si=f468b2627e224e2f", icon_url = "https://ssb.wiki.gallery/images/2/27/BayonettaHeadSSBUWebsite.png")
@@ -1110,6 +1151,20 @@ async def Joker(context):
     Joker.add_field(name = Weightclass, value = "`Middleweight`", inline = True)
     Joker.set_footer(text = "Can: Tether Recovery, Wall Jump")
     await context.message.channel.send(embed = Joker)
+
+
+@client.command(name = 'Hero')             #Hero Command: #76    
+async def Hero(context):
+    Hero = discord.Embed(title = "Dragon Quest (1986)", type = "rich", description = "So Many Better RPGs Exist" , color = 0x93817a)
+    Hero.set_thumbnail(url = "https://ssb.wiki.gallery/images/0/07/Hero_SSBU.png")
+    Hero.set_author(name = "#76: Hero", url = "https://open.spotify.com/track/1dTGrrrrluoDAdNVRMpmKd?si=6486ac4233184f73", icon_url = "https://ssb.wiki.gallery/images/1/1e/HeroHeadSSBUWebsite.png")
+    Hero.add_field(name = RunSpd, value = "1.84 `[34]`", inline = True)
+    Hero.add_field(name = AirSpd, value = "1.01 `[55-56]`", inline = True)
+    Hero.add_field(name = FallSpd, value = "1.57 `[52]`", inline = False)
+    Hero.add_field(name = Weight, value = "101 `[30]`", inline = True)
+    Hero.add_field(name = Weightclass, value = "`Heavyweight`", inline = True)
+    await context.message.channel.send(embed = Hero)
+
 
 
 
